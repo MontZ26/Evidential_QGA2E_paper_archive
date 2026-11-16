@@ -141,7 +141,7 @@ for a,c in [('**Table 3.**','**Table 4.**'),('**Table 2.**','**Table 3.**'),('**
 out=out.replace('the extended version (Table B2)','the Supplementary Material (Table B2)').replace('extended version','Supplementary Material')
 out=out.replace('summarised in Section 2.6','summarised in Section 2.4')
 out=out.replace('Sections 2.2–2.4, belief','Sections 2.1–2.3, belief')
-out=out.replace('# References','**Supplementary material.** The extended manuscript (with the full results of Sections 6.3 to 6.5, the post hoc analyses, the full limitations, the declared incidents and the refinement studies), the frozen protocols and code, and the final analysis files are provided as Supplementary Material and archived in release v1.0 of https://github.com/MontZ26/Evidential_QGA2E_paper_archive.\n\n# References',1)
+out=out.replace('# References','**Supplementary material.** The extended manuscript (with the full results of Sections 6.3 to 6.5, the post hoc analyses, the full limitations, the declared incidents and the refinement studies), the frozen protocols and code, and the final analysis files are provided as Supplementary Material and archived in release V1.0 of https://github.com/MontZ26/Evidential_QGA2E_paper_archive (permanent link: https://github.com/MontZ26/Evidential_QGA2E_paper_archive/releases/tag/V1.0).\n\n# References',1)
 
 def Q(a,c):
     global out
