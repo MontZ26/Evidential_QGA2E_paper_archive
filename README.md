@@ -7,6 +7,9 @@ Companion repository of the manuscript *Evidential versus Probabilistic Target D
 - `studies/pN/` : one folder per study (P2 to P26). Each holds the protocol and/or final report (`*.md`), the frozen parameters and freeze records (`*_params.json`, `*_freeze*.txt`), the code (`code/`), the pre-specified test results (`*_tests_results.json`) and the final analysis file (`*_final_analysis.json`).
 - `Synthese_protocoles_P2_P22_v2.md` : summary of protocols P2 to P22.
 
+## Language note
+The protocols and final reports in `studies/` were written in French and are kept as the original, hash-linked records of each study. The manuscript (`paper/`) is the English account of all methods and results. English translations of any protocol or report are available on request from the corresponding author (montassar.zaghdoud@mse.uma.tn).
+
 ## What is not included
 The raw per-run result files (several GB) are not stored here because of GitHub size limits. The final analysis files, which the manuscript tables are computed from, are included. Raw runs can be regenerated with the code and the seeds stated in each protocol.
 
