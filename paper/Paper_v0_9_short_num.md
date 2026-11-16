@@ -12,7 +12,7 @@ Multiobjective team assignment in home health care must cope with uncertain affi
 
 # 1. Introduction
 
-Home health care (HHC) organisations assign patients to care teams under competing objectives: travel effort, patient-side quality of service, and workload balance with skill adequacy. The quality of a candidate assignment depends on quantities that are only partially known when the plan is built, such as the adequacy of a team for a skill or the satisfaction a team is expected to produce. Belief-function (Dempster–Shafer) models represent partial, imprecise and conflicting information, and can carry it into a search algorithm. Quantum-inspired evolutionary algorithms maintain, for each decision variable, a probability-like amplitude that is rotated towards good solutions; they can be read as model-based search schemes whose sampling distribution is parametrised by angles (Section 2.1).
+Home health care (HHC) organisations assign patients to care teams under competing objectives: travel effort, patient-side quality of service, and workload balance with skill adequacy [1–5]. The quality of a candidate assignment depends on quantities that are only partially known when the plan is built, such as the adequacy of a team for a skill or the satisfaction a team is expected to produce. Belief-function (Dempster–Shafer) models represent partial, imprecise and conflicting information, and can carry it into a search algorithm. Quantum-inspired evolutionary algorithms maintain, for each decision variable, a probability-like amplitude that is rotated towards good solutions; they can be read as model-based search schemes whose sampling distribution is parametrised by angles (Section 2.1).
 
 This paper asks a narrow question. In one quantum-inspired genetic algorithm, QGA2-E, the amplitudes are rotated towards a *target distribution* built from the best individuals of the current population. The target can be built by a probabilistic frequency model, or by Dempster–Shafer evidence combined with Dempster's rule and converted to a probability by the pignistic transformation. We observed early on that the evidential target gives a better hypervolume than a simple probabilistic target. The question is why. Two explanations compete. The first is that the evidential *representation* carries something the probabilistic model does not. The second is that the evidential construction simply yields a *more concentrated* target, and that concentration, not representation, drives the gain. They make different predictions: if concentration is the mechanism, a probabilistic target sharpened by a power transformation should reproduce the gain, and sharpening the evidential target further should not help.
 
@@ -68,7 +68,7 @@ The objective vector is $f(x;\xi)=(f_1,f_2,f_3)$ and depends on a *world* $\xi=(
 
 ## 3.3 Quality measure
 
-For a finite set $F\subset[0,1]^3$ and the reference point $r=(1.2,1.2,1.2)$, the hypervolume is the Lebesgue measure of the region dominated by $F$ and bounded by $r$:
+The hypervolume indicator is the standard unary quality measure for multiobjective fronts [18, 19]. For a finite set $F\subset[0,1]^3$ and the reference point $r=(1.2,1.2,1.2)$, the hypervolume is the Lebesgue measure of the region dominated by $F$ and bounded by $r$:
 $$\mathrm{HV}(F)=\lambda\Big(\bigcup_{f\in F}[f,r]\Big),$$
 computed exactly. For a run, let $\mathcal X$ be the archive of all solutions evaluated during the search that are non-dominated *with respect to the nominal objectives* $f(\cdot;\hat\xi)$ (the archive is updated after each evaluation and the oracle values play no part in it). The **oracle hypervolume** is $\mathrm{HV}\big(\{f(x;\xi^\ast):x\in\mathcal X\}\big)$, where $\xi^\ast$ is the hidden true world. It is therefore the hypervolume of the *nominally selected* archive after a single oracle re-evaluation, not of the set of solutions that are non-dominated in the oracle world among all those evaluated; the search itself only evaluates in a *nominal* world $\hat\xi$ (Section 3.4). The oracle world enters only in this last re-evaluation, a rule that was tested before every confirmatory run.
 
@@ -159,6 +159,8 @@ NSGA-II [26] and MOEA/D [27] are run on the same instances, seeds, decoder and b
 # 5. Experimental design and decision rules
 
 ## 5.1 Outcome, pairing and statistics
+
+Reporting follows standard practice: percentile bootstrap intervals [20]; practical equivalence assessed by two one-sided tests [21] or, equivalently, by a confidence interval lying inside an equivalence margin [22]; Holm adjustment for multiplicity within a family [23]; and the reproducibility and pre-registration practices advocated for evolutionary computation [24] and for empirical science [25].
 
 The outcome of a run is the oracle hypervolume (Section 3.3). For seed $s$ and arm $a$ let $h_{a,s}=\frac16\sum_{c=1}^6\mathrm{HV}^{\mathrm{oracle}}_{a,s,c}$ over the six scenarios. A contrast between arms $a$ and $b$ is $\Delta_{ab}=\frac1n\sum_s(h_{a,s}-h_{b,s})$ on the same seeds and instances. Intervals are percentile bootstrap intervals from resampling seeds jointly ($B=20{,}000$, deterministic random stream per analysis).
 

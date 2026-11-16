@@ -161,4 +161,10 @@ out=out.replace('weight of evidence;\n','weight of evidence.\n')
 import re as _r2
 _m=_r2.search(r"(?m)^\*\*Instances\.\*\* Six scenarios[^\n]*$",out); assert _m
 out=out.replace(_m.group(0),_m.group(0)+" Public home-care benchmark sets exist [29] but contain no observed affinities or evidence sources, which is why the evidence is simulated here.",1)
+def RR(a,c):
+    global out
+    assert out.count(a)==1,a[:50]; out=out.replace(a,c)
+RR("workload balance with skill adequacy. The quality","workload balance with skill adequacy [1–5]. The quality")
+RR("For a finite set $F\\subset[0,1]^3$ and the reference point","The hypervolume indicator is the standard unary quality measure for multiobjective fronts [18, 19]. For a finite set $F\\subset[0,1]^3$ and the reference point")
+RR("## 5.1 Outcome, pairing and statistics\n\n","## 5.1 Outcome, pairing and statistics\n\nReporting follows standard practice: percentile bootstrap intervals [20]; practical equivalence assessed by two one-sided tests [21] or, equivalently, by a confidence interval lying inside an equivalence margin [22]; Holm adjustment for multiplicity within a family [23]; and the reproducibility and pre-registration practices advocated for evolutionary computation [24] and for empirical science [25].\n\n")
 open('Paper_v0_9_short_num.md','w').write(out); print(len(out.split()))
