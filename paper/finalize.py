@@ -16,6 +16,6 @@ for src,dst,short_ in [('Paper_v0_9_num.md','Paper_v0_9.md',False),('Paper_v0_9_
     s=re.sub(r'\*\*Use of AI tools\.\*\*[^\n]*\n\n','',s)
     s=re.sub(r'\*\*Availability\.\*\*[^\n]*\n\n?','',s)
     s=re.sub(r'(?m)^\*\*Keywords:\*\*[^\n]*$','**Keywords:** home health care; multiobjective optimisation; quantum-inspired genetic algorithm; Dempster–Shafer theory; estimation of distribution algorithms; hypervolume.',s,1)
-    if short_: s=s.replace('Supplementary Material','Online Resource 1').replace('Supplementary material','Online Resource 1')
+    if short_: s=s.replace('Supplementary Material','Online Resource 1').replace('Supplementary material','Online Resource 1').replace('is in the Online Resource 1','is provided in Online Resource 1').replace('the Online Resource 1','Online Resource 1')
     head,reflist,tail=transform(s)
     open(dst,'w').write(head.rstrip()+'\n\n'+tail.rstrip()+'\n\n'+reflist.rstrip()+'\n\n'+statements())
