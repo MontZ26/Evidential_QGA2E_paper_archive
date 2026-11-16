@@ -347,7 +347,7 @@ Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computer
 
 Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: Miettinen K., Mäkelä M.M., Toivanen J. (eds) *Proceedings of EUROGEN99 – Short Course on Evolutionary Algorithms in Engineering and Computer Science*. Reports of the Department of Mathematical Information Technology, Series A, No. 2/1999, University of Jyväskylä, 1999, 57–64.
 
-Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: Crainic T.G., Laporte G. (eds) *Fleet Management and Logistics*. Kluwer Academic Publishers, Boston, 1998, 33–56. https://doi.org/10.1007/978-1-4615-5755-5_2.
+Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: Crainic T.G., Laporte G. (eds) *Fleet Management and Logistics*. Springer, Boston, MA, 1998, 33–56. https://doi.org/10.1007/978-1-4615-5755-5_2.
 
 Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithm for a class of combinatorial optimization. *IEEE Transactions on Evolutionary Computation* 6(6) (2002) 580–593. https://doi.org/10.1109/TEVC.2002.804320.
 
