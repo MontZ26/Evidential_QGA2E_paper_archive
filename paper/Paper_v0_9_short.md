@@ -311,6 +311,8 @@ In QGA2-E for home health care team assignment, an evidential target built with 
 
 **Supplementary material.** The extended manuscript (with the full results of Sections 6.3 to 6.5, the post hoc analyses, the full limitations, the declared incidents and the refinement studies), the frozen protocols and code, and the final analysis files are provided as Supplementary Material and archived in release V1.0 of https://github.com/MontZ26/Evidential_QGA2E_paper_archive (permanent link: https://github.com/MontZ26/Evidential_QGA2E_paper_archive/releases/tag/V1.0).
 
+**Use of AI tools.** The author used Claude (Anthropic) to assist with drafting and editing the manuscript text, preparing tables and figures from the analysis files, and checking cross-references and citations. The experimental design, the experiments, the interpretation of the results and the final content were produced and verified by the author, who takes full responsibility for the manuscript.
+
 # References
 
 1. Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. DOI 10.1016/j.cor.2016.07.019.

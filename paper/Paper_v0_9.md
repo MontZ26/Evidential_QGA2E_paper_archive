@@ -468,6 +468,8 @@ A final pre-registered study separated, as far as two concentration diagnostics 
 
 Perspectives: a design that manipulates concentration while holding the representation fixed (and the reverse) with exact distributional matching; a design in which the strength of the evidential contribution adapts to the state of the search (a hypothesis suggested by the strong dependence of the speed of concentration on the source strength, not tested here); other integration points of evidential information in classical algorithms (an additional objective, crossover bias); other budgets and instance families; real or semi-real evidence data; and the integrated routing and scheduling problem.
 
+**Use of AI tools.** The author used Claude (Anthropic) to assist with drafting and editing the manuscript text, preparing tables and figures from the analysis files, and checking cross-references and citations. The experimental design, the experiments, the interpretation of the results and the final content were produced and verified by the author, who takes full responsibility for the manuscript.
+
 # References
 
 1. Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. DOI 10.1016/j.cor.2016.07.019.
