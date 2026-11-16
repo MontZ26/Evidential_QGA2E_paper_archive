@@ -1,0 +1,13 @@
+# P19 freeze 2026-11-11T13:17:07Z
+7f773873efc52b3c7ace7b224b9fd99a3aa00fcc2c68f3970795f128b6166dab  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/Protocole_P19_v0_3.md
+2b526eebd01cae089d4f7cd3f02a3807c7039d8bf95084b6ef87d09a71aad006  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/p19_calib.json
+e689cd27d449176b36b3ee8cb4a3aea314b461a4a5cdecba763213e819cd1449  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/p19_gamma.json
+7be2e9f5ec52fc3b8b3bd3baa13d9d6bcbe7312fcb855c31f22d84b36732eac6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/p19_manifest.json
+7237209eeaba59d9f0f4d1b7c8778de4bdc83fd6ec577a669ffedc94c8501876  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/p19_tests_results.json
+cb58012121f97754b79d2ea9704a4dd10410c5c387fcbfe30b1f1fdfb5e3cb52  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19.py
+bc11c9eb05ea16dc537719a6c862a74a884f276a310a3f72b409f9099e9740c7  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19_calib.py
+aba445e354d2c1ae0cf2ebd6925afc9e3dba7181632a39ff461f001901a151b9  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19_select.py
+0d8c1e64f06702ec7be627844fc905d76c5fd7c171398da1fc04b8db712c5801  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19_run.py
+c7ee83187142cf7e5776df487976ec9e659d307d413b040059f4c9eb188f4a38  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19_an.py
+54d68e7406e69f2ed96b13df02bd1a8798c311840191a7c7acc168f52d7a2888  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p19/code/p19_tests.py
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_params.json

@@ -1,0 +1,10 @@
+# P17 Tier 1 freeze 2026-11-11T06:14:34Z
+59b3a98ca0e6279e38a2123eda244fdad0058d4b12b3d19185e3b1db64d86413  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/Protocole_P17_v0_2.md
+0e2d5d641d30cd3ebed580da80502e95ddb02bf012ed17e9b70ac4b6db419716  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/p17_power.json
+fcaeaedd791208af079335143b82a66605cd75093f38fa6bcdcd0434c3c792ad  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/p17_tests_results.json
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_params.json
+067e10e3b9206d5d008933371c1a135a5630a76b116c6e8f1ea218b94f526442  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/code/p17.py
+0d0800e3d1add094b97657b1f71a76c125ec6ae5ee34a625ed220740f66f9d99  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/code/p17_run.py
+7b24ecb7e4b24d1fc0602154add00483e48014b734c0c889e14c575772fc4a6b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/code/p17_an.py
+a684c5e52d655a464e76669999e0350b44b2a8754e483e9a1029e1773fa8ba2f  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/code/p17_tests.py
+225b36b1d27398c6040e3f07c4cbd32e543acbda79119c20597a29a2d494b1ac  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p17/code/p17_power.py

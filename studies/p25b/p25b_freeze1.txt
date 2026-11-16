@@ -1,0 +1,17 @@
+# P25b freeze 2026-11-15T08:56:00Z
+803b8d697aa3fd4d5f69e7f7bbd2d7bf269e912eecccfa40726a3e42d7411bed  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/Protocole_P25b_geographies_de_benchmark_v0_1.md
+23e10211895d8cd67e1eea1214c63c871794fef4538b96ae040a7cf9d35607f5  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/files_sha256.txt
+0e4a2aea529d71e8b9e3d550645e58e0fb2f52d95303150c16e860f4d6bc3e8c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/p25b_calib.json
+15312efe602af89a66f3fb0fe7a453ea1d2c204325f7ea57183ccc4dab1c0cec  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/p25b_params.json
+4a1475aa9de6f60a65dd449868469d0d7ebb968c8b5f5a98b307ca2e2fc1f34a  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/p25b_tests_results.json
+dcbd0bab2dadc56133646cd5b7076eff576e0a94571272dace4a21089a1862f7  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/p25b_pilot.json
+33d0c94b43fbf13477f8c8a9b34f58b2f2e5e928fb6d470357f04f01ccb8fe22  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b.py
+899ab37eb6631507758fdf2e493ce5fab2e1a956f8b25d9f00a74122a7e52781  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_calib.py
+80c548b0b60cb01b2312c33fb2be815b4d8c37dc55fb7941d306f9d0ee2c1fe3  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_select.py
+5533b7b9f7cbf67325470a9b072697c9586647099761282d94d70e4271ba4f72  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_pilot.py
+ea466f11eb0dcd1cb0a3f9f91a997ec9558712ef72011013fd9abf0dc026b7ad  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_run.py
+005fdefe18f6b2eb78b8004e05222e5c14f0df4058e129932556636315d65675  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_an.py
+42bb8a62b63630eda927348fef8d965a81f04762b5ad225e31edf5d15058fdd5  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_tests.py
+b07fa93b09f88e598c5c5ec721e699f8a6f5d24063b8ddda6a9fe182d332c0c6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25b/code/p25b_dryrun_an.py
+d3bdaa74cc56b71f1a835ca4b8008f8e04f2c534ff90fef2d5f484ecede2b3c8  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p24/code/p24.py
+f781b82951c90fc379303f5d1abe67e218a170a9eddc933b461f2501a4a55230  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p25/p25_final_analysis.json

@@ -1,0 +1,13 @@
+# P14 freeze 2026-11-10T10:54:02Z
+e7329553d4d4e77c6a5334eed747e9641be18b4ea47beeb4337c39f8376c5cc9  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/Protocol_P14_QGA2E_concentration_et_references_v0_1_candidate.md
+9b5337d53ff30718908bf4c53a8bfe5ed6310421584d86b6765f4d9ed5199d51  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/Amendement_P14_RS1_confirmation_decisions.md
+f2e9ef5407800191f56a5a25a5539c71052d90aa09335f90eb2b7569b8c0fabf  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/Amendement_P14_D14-9_echec_GN.md
+547132ca9771606971f6cac54c8e9706f05c95c326d36be9c50c25bd68ede848  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/Regle_calibration_P14.md
+4592b3e3dc4d189a3e71e1259037d6ad8b38f9244b9285b204f1782681f71573  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/p14_params.json
+75cfb8995e2edbf7827da8c66fa75e735a7034c3449ca4ce3dd68a93c1918381  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/p14_n.json
+105e53a02ab9fb984af6822049c306ad539e0918757bd0de579bed834017bd15  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/p14_calib.json
+c442453cc004c587a3b2cda54eccd6bd8981ee607564de2efbda444c22133231  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14.py
+a82005338724af9857a2a5f764e0abe9614c817c2bee0d56b34d628da85ac363  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14_run.py
+13f6b0bca9df80b0063b8287466f78d3acfc756bad5158fed87f54910c3628f1  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14_an.py
+324251d42f49e792707710be64b162d5226f42fb97a7e59be5b662f98e686609  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14_calib.py
+61f02580d27d90b5c6b04ca634e7918e68c7c9710cc9040a15476ef752be2a34  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14_tests.py

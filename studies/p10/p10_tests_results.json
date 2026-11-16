@@ -1,0 +1,19 @@
+{
+ "V0c_normalised_floor_support": true,
+ "V0c_permutation_invariance": true,
+ "V0c_total_ignorance_uniform": true,
+ "V0c_singleton_front_mode_is_source": true,
+ "V1_normalised_floor_support": true,
+ "V1_permutation_invariance": true,
+ "V1_total_ignorance_uniform": true,
+ "V1_singleton_front_mode_is_source": true,
+ "V1_monotone_in_count": true,
+ "GQ1_nonregression_QGA2E_bit_for_bit_3_instances": true,
+ "GQ0_single_source_reduces_to_QGA2E_rotation_(w=1,eps=0)": true,
+ "GQ1_budget_exact_6040_all_arms": true,
+ "GQ1_no_oracle_in_search": true,
+ "GQ3_DEC_inert_cap_equals_DEC_off_bit_for_bit": true,
+ "GQ3_diagnostics_read_only_identical_fronts": true,
+ "GQ3_DEC_on_budget_and_counters": true,
+ "GQ3_cap_respected_or_violations_declared": true
+}

@@ -1,0 +1,50 @@
+"""P22 pre-registered analysis. python p22_an.py precheck DIR FREEZE | final DIR OUT.json FREEZE (RUN ONCE; HV read only here). References NSGA2, E, Dp, Dg from stored P14 shards (same seeds)."""
+import sys, os, json, glob
+B = "/tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad"; sys.path.insert(0, B + "/p6/code"); sys.path.insert(0, B + "/p5")
+import numpy as np, p6_stats as S, run_p1m as R0
+SC = S.SC; DELTA = 0.005; NEW = ["GDp", "GE", "GDg6", "GEg6", "GEgm"]; REF = ["NSGA2", "E", "Dp", "Dg"]; P14 = B + "/p14/runs/conf"; GENS = [0, 24, 49, 99, 149]; SEEDS = list(range(10400, 10500))
+def save(o, p): tmp = p + ".tmp"; json.dump(o, open(tmp, "w"), indent=1, default=str); os.replace(tmp, p)
+def load_dir(d): return {f"{r['sc']}|{r['seed']}": r for r in (json.load(open(f)) for f in sorted(glob.glob(d + "/*__*.json")))}
+def precheck(d, freeze):
+    bad = []
+    if not R0.verify_freeze(freeze): bad.append("freeze")
+    res = load_dir(d)
+    if sorted({r["seed"] for r in res.values()}) != SEEDS or len(res) != 600: bad.append(f"shape {len(res)}")
+    for k, r in res.items():
+        for a in NEW:
+            c = r.get("conds", {}).get(a)
+            if c is None or c["n_eval"] != 6040: bad.append(f"{k} {a}")
+    A = B + "/p22"; first = min(os.path.getmtime(f) for f in glob.glob(d + "/*__*.json"))
+    if not (os.path.exists(A + "/p22_calib.json") and os.path.exists(A + "/p22_gamma.json") and os.path.getmtime(A + "/p22_calib.json") < os.path.getmtime(A + "/p22_gamma.json") < first): bad.append("G7 order calib<gamma<first shard")
+    def keys(o): return [k for k in o] + [x for v in o.values() if isinstance(v, dict) for x in keys(v)]
+    if any("hv" in str(k).lower() for k in keys(json.load(open(A + "/p22_calib.json")))): bad.append("G7 calib has an hv field")
+    print("PRECHECK", "OK" if not bad else bad[:10]); return not bad
+def cls(lo, hi):
+    if lo > 0: return "superiority"
+    if hi < 0: return "inferiority"
+    if lo > -DELTA and hi < DELTA: return "equivalence"
+    return "inconclusive"
+def final(d, out, freeze):
+    assert not os.path.exists(out), "RUN ONCE"; assert precheck(d, freeze); res = load_dir(d); seeds = SEEDS; n = len(seeds)
+    ref = {f"{sc}|{s}": json.load(open(f"{P14}/{sc}__{s}.json")) for sc in SC for s in seeds}; cond = lambda a, sc, s: (res if a in NEW else ref)[f"{sc}|{s}"]["conds"][a]
+    src = {a: {sc: np.array([cond(a, sc, s)["hv_oracle"] for s in seeds]) for sc in SC} for a in NEW + REF}; H = {a: np.mean([src[a][sc] for sc in SC], axis=0) for a in src}
+    idx = S.sub_rng("p22_final", 11997).randint(0, n, size=(20000, n)).astype(np.int32)
+    prim = {"P1 GE-GDp": H["GE"] - H["GDp"], "P2 GEg6-GDg6": H["GEg6"] - H["GDg6"], "P3 GEgm-GDg6": H["GEgm"] - H["GDg6"], "P4 GDp-NSGA2": H["GDp"] - H["NSGA2"], "P5 interaction (GEg6-GDg6)-(GE-GDp)": (H["GEg6"] - H["GDg6"]) - (H["GE"] - H["GDp"])}
+    rep = dict(status="PRE-REGISTERED P22 (5 primaries, 99% CI, margin 0.005)", n_seeds=n, gamma_m=json.load(open(B + "/p22/p22_gamma.json"))["gamma_m"], hv_oracle_means={a: float(H[a].mean()) for a in H}, hv_oracle_sd={a: float(H[a].std(ddof=1)) for a in H}, primary={}, secondary={}, per_scenario={})
+    for k, dd in prim.items():
+        bm = dd[idx].mean(1); lo, hi = float(np.percentile(bm, 0.5)), float(np.percentile(bm, 99.5)); rep["primary"][k] = dict(mean=float(dd.mean()), sd=float(dd.std(ddof=1)), ci99=[lo, hi], decision=cls(lo, hi), share_pos=float((dd > 0).mean()))
+    sec = {"GE-NSGA2": H["GE"] - H["NSGA2"], "GDg6-NSGA2": H["GDg6"] - H["NSGA2"], "GEg6-NSGA2": H["GEg6"] - H["NSGA2"], "GEgm-NSGA2": H["GEgm"] - H["NSGA2"], "GEg6-GE": H["GEg6"] - H["GE"], "GDg6-GDp": H["GDg6"] - H["GDp"], "GEgm-GEg6": H["GEgm"] - H["GEg6"],
+           "GE-E (descriptive)": H["GE"] - H["E"], "GDp-Dp (descriptive)": H["GDp"] - H["Dp"], "GDg6-Dg (descriptive)": H["GDg6"] - H["Dg"], "NSGA2-E (descriptive)": H["NSGA2"] - H["E"]}
+    for k, dd in sec.items(): bm = dd[idx].mean(1); rep["secondary"][k] = dict(mean=float(dd.mean()), ci95=[float(np.percentile(bm, 2.5)), float(np.percentile(bm, 97.5))])
+    for k, (a, b) in {"P1": ("GE", "GDp"), "P2": ("GEg6", "GDg6"), "P3": ("GEgm", "GDg6"), "P4": ("GDp", "NSGA2")}.items(): rep["per_scenario"][k] = {sc: float((src[a][sc] - src[b][sc]).mean()) for sc in SC}
+    dg = {a: {k: {str(g): float(np.mean([res[f"{sc}|{s}"]["conds"][a]["dyn"][g][k] for sc in SC for s in seeds])) for g in GENS} for k in ("q_max", "q_ent")} for a in NEW}
+    for a in NEW:
+        dg[a]["q_max_all_gens"] = float(np.mean([x["q_max"] for sc in SC for s in seeds for x in res[f"{sc}|{s}"]["conds"][a]["dyn"]])); dg[a]["q_ent_all_gens"] = float(np.mean([x["q_ent"] for sc in SC for s in seeds for x in res[f"{sc}|{s}"]["conds"][a]["dyn"]]))
+        dg[a]["mutations_drawn"] = float(np.mean([res[f"{sc}|{s}"]["conds"][a]["cnt"]["drawn"] for sc in SC for s in seeds])); dg[a]["mutations_effective"] = float(np.mean([res[f"{sc}|{s}"]["conds"][a]["cnt"]["effective"] for sc in SC for s in seeds]))
+    rep["diagnostics"] = dg; HD, QD = dg["GDg6"]["q_ent_all_gens"], dg["GDg6"]["q_max_all_gens"]; HG, QG = dg["GEgm"]["q_ent_all_gens"], dg["GEgm"]["q_max_all_gens"]
+    rep["matching_SC6_GEgm_vs_GDg6"] = dict(rel_entropy_gap=abs(HG - HD) / HD, abs_qmax_gap=abs(QG - QD), gate_satisfied=bool(abs(HG - HD) / HD <= 0.10 and abs(QG - QD) <= 0.05), reading="if False, P3 is a valid contrast between two arms but is NOT an effect of representation at comparable concentration (protocol 8.4)")
+    rep["wall_s_mean_per_task"] = float(np.mean([r["wall_s"] for r in res.values()])); save(rep, out); print(json.dumps(rep, indent=1, default=str))
+if __name__ == "__main__":
+    m = sys.argv[1]
+    if m == "precheck": sys.exit(0 if precheck(sys.argv[2], sys.argv[3]) else 1)
+    elif m == "final": final(sys.argv[2], sys.argv[3], sys.argv[4])

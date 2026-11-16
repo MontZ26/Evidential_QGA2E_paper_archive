@@ -1,0 +1,17 @@
+{
+ "ramp_values": [
+  1.0,
+  5.344827586206897,
+  10.0,
+  10.0,
+  10.0
+ ],
+ "ramp_ok": true,
+ "const_equals_static_hv": true,
+ "const_equals_static_F": true,
+ "gamma_series_len": 150,
+ "gamma_series_monotone": true,
+ "counter_reset_between_runs": true,
+ "guard": true,
+ "pass": true
+}

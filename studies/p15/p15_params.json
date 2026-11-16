@@ -1,0 +1,10 @@
+{
+ "chosen": {
+  "w": 0.3,
+  "eps": 0.02,
+  "gamma": 6.0,
+  "sigma": 0.7,
+  "lam": 1.0
+ },
+ "status": "fixed a priori (P15 protocol): lambda=1 axiom, sigma=0.7 P11, w=0.3 inherited P10 (HV-informed, declared), gamma=6 non-conforming"
+}

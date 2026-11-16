@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "Evidential versus Probabilistic Target Distributions in QGA2-E for Home Health Care Team Assignment: protocols, code and analyses"
+authors:
+  - family-names: Zaghdoud
+    given-names: Montassar
+    affiliation: "Manouba School of Engineering, Manouba University, Tunisia"
+    email: montassar.zaghdoud@mse.uma.tn
+date-released: 2026-11-16
+version: "1.0"
+license: MIT

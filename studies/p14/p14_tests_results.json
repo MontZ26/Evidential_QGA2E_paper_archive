@@ -1,0 +1,17 @@
+{
+ "V0c_gamma1_identical_to_P10_target_bit_for_bit": true,
+ "V0c_normalised_finite_floor_support_all_gamma": true,
+ "V0c_entropy_monotone_decreasing_in_gamma": true,
+ "V0c_permutation_invariance_gamma3": true,
+ "V1_gamma1_identical_to_P10_target_bit_for_bit": true,
+ "V1_normalised_finite_floor_support_all_gamma": true,
+ "V1_entropy_monotone_decreasing_in_gamma": true,
+ "V1_permutation_invariance_gamma3": true,
+ "GR0_E_Dp_B_bit_for_bit_vs_P10": true,
+ "GR0_NSGA2_wrapper_same_cands_and_budget": true,
+ "GR0_MOEAD_budget_6030_and_wrapper_same": true,
+ "GR0_C0b_bit_for_bit_vs_P9_B": true,
+ "GR0_budget_exact_all_arms": true,
+ "GR0_no_oracle_in_search_Dg": true,
+ "GR0_no_oracle_in_search_NSGA2": true
+}

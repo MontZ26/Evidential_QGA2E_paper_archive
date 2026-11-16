@@ -1,0 +1,17 @@
+{
+ "DA_lambda0_equals_V1_bit_for_bit": true,
+ "DA_permutation_invariance": true,
+ "DA_duplication_invariance_equivalence_classes": true,
+ "DA_bounds_1_le_ntilde_le_n": true,
+ "DA_ignorance_mTheta_ge_Dempster_mTheta": true,
+ "DA_normalised_finite_floor_support": true,
+ "DA_mTheta_nonincreasing_in_sigma": true,
+ "PDA_rows_sum_to_one": true,
+ "NONREG_E_Dp_Dg_bit_for_bit_vs_P14_stored_10400": true,
+ "NONREG_V2_bit_for_bit_vs_direct_run_q": true,
+ "budget_exact_all_arms": true,
+ "diag_mTheta_mEmpty_recorded_gen1_150": true,
+ "E_diag_mTheta_recorded": true,
+ "no_oracle_in_search_DA": true,
+ "no_oracle_in_search_PDA": true
+}

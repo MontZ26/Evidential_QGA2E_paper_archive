@@ -1,0 +1,17 @@
+PASS G8_seed_allowlist
+PASS G9a_600_P14_reference_shards_exist
+PASS G9b_stored_NSGA2_budget_and_hv_recomputes_from_stored_front
+PASS G1_G9c_unguided_path_bit_for_bit_equals_stored_NSGA2_on_3_tasks
+PASS G2_conditional_law_exact_and_empirical_freq_within_0.01
+PASS G2b_no_mutation_without_alternative_team
+PASS G3a_target_equals_reference_gamma_1_and_6_V0c_V1
+FAIL G3b_arms_use_make_target_and_first_front_sources_once_per_generation
+PASS G3c_arm_table_rules
+PASS G4a_budget_6040_all_guided_arms
+PASS G4b_archive_nonempty_and_counter_restored
+PASS G4c_reproducible
+PASS G5_no_oracle_in_search
+PASS G6_finite_values
+PASS G6b_mutation_counts_effective_le_drawn_and_nearly_all_effective
+   q_max GDp/GE/GDg6/GEg6 (info) [0.3672123871343778, 0.8919916414084742, 0.8290643249994797, 0.9249361970797384]
+ALL False

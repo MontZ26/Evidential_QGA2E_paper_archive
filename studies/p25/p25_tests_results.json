@@ -1,0 +1,25 @@
+{
+ "deterministic": true,
+ "seed_differs": true,
+ "n_pts": 101,
+ "depot_first": true,
+ "coords_in_range": true,
+ "feasible_of_5": {
+  "V6-U": 5,
+  "V7-U": 5,
+  "V6-K": 5,
+  "V7-K": 5,
+  "V6-M": 5,
+  "V7-M": 5
+ },
+ "guard_rejects_unregistered_seed": true,
+ "build_deterministic": true,
+ "budget_ok": true,
+ "finite": true,
+ "npz_keys": [
+  "DA_w0.3_s0.7|1",
+  "DA_w0.3_s0.7|100",
+  "DA_w0.3_s0.7|150"
+ ],
+ "pass": true
+}

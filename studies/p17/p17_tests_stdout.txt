@@ -1,0 +1,28 @@
+PASS 2_gain_E_exact_vs_full_recompute_max_err_le_1e-9_and_zero_rank_changes
+    {'gainE_err_max': 2.7755575615628914e-16, 'gainE_err_q999': 2.6928459462283167e-16, 'gainE_rank_violations': 0, 'gainE_pairs': 88634}
+PASS 3_gain_P_exact_vs_V0c_recompute
+PASS 4_interval_width_equals_mTheta_for_every_team_and_masses_match_DA_target
+PASS 5_sources_index_is_3_objective_first_front
+PASS 10a_SELW_constant_U_selects_same_set_as_original_selection
+PASS 10b_SELW_lambda1_follows_U
+PASS 7a_SELR_selection_independent_of_genotypes_same_stream
+PASS 7c_SELR_stream_uniform_0_1
+   7.5s
+PASS selection_patch_restored_after_run
+PASS 6a_budget_exact_6040_SEL4
+PASS 6b_archive_and_HV_on_3_objectives
+PASS 9_no_NaN_inf_and_log_has_150_generations
+   SEL4 diag: front4_share 0.470 divergence 0.137 S_size 22.1
+   7.6s
+PASS 11_reproducible_run
+   8.1s
+   7.7s
+   7.9s
+PASS 6c_budget_exact_all_selection_arms
+   SELW diag: front4_share 0.337 divergence 0.226
+   SELR diag: front4_share 0.400 divergence 0.147
+   Dp+SEL4 diag: front4_share 0.497 divergence 0.127
+PASS 1a_baselines_E_Dp_Dg_bit_for_bit_vs_P14_stored
+PASS 1b_DA_baseline_bit_for_bit_vs_P15_after_selection_runs
+PASS 8_no_oracle_in_search_selection_arms
+ALL True

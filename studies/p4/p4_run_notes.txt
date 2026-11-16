@@ -1,0 +1,7 @@
+run restarted 2026-11-07T21:11:43Z after kill (resumable, no result altered)
+slice relaunch 2026-11-07T23:06:56Z (resumable, same frozen code)
+slice relaunch 2026-11-07T23:37:02Z after default 30-min background limit kill (resumable, same frozen code, no result altered)
+slice relaunch 2026-11-08T01:33:23Z (832/1800 done; resumable, same frozen code)
+slice relaunch 2026-11-08T03:29:09Z (resumable, same frozen code)
+container restart; relaunch 2026-11-08T04:24:38Z at 1364/1800 (atomic json intact, same frozen code)
+slice relaunch 2026-11-08T06:20:30Z at 1744/1800

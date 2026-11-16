@@ -1,0 +1,346 @@
+PRECHECK OK
+{
+ "contrasts": {
+  "L1 E-Dgt_E w=0.3": {
+   "a": "E_w0.3",
+   "b": "Gt_w0.3_E_3_6_90",
+   "mean": -6.7948638699198245e-06,
+   "sd": 0.011837991230787805,
+   "ci99": [
+    -0.003857151227427831,
+    0.0038656650574112913
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.004471014899108101,
+    0.00456210978848614
+   ],
+   "decision_bonferroni": "equivalence",
+   "share_pos": 0.45
+  },
+  "L2 DA-Dgt_DA w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Gt_w0.3_DA_3_6_90",
+   "mean": 0.0013487862810418888,
+   "sd": 0.010454910049088445,
+   "ci99": [
+    -0.002089938601773323,
+    0.004918122806800649
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.002805509249177922,
+    0.0055333252681605835
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.48333333333333334
+  },
+  "L3 DA-E w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "E_w0.3",
+   "mean": -0.00022886652711201865,
+   "sd": 0.012017252913559512,
+   "ci99": [
+    -0.004267669371013064,
+    0.0037063270871690005
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.005054002357585981,
+    0.004373324460074366
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5166666666666667,
+   "ref_earlier": {
+    "mean": -0.0009125776464375411,
+    "ci99": [
+     -0.001905121171584925,
+     -0.00010867670369291247
+    ],
+    "decision": "inferiority"
+   },
+   "same_direction": true,
+   "same_class": false
+  },
+  "L4 DA-Dp w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dp_w0.3",
+   "mean": -0.0009099204626783504,
+   "sd": 0.011348736561470122,
+   "ci99": [
+    -0.004746200848030411,
+    0.002837591078490287
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.005547524707622711,
+    0.0036350348373970377
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.48333333333333334,
+   "ref_earlier": {
+    "mean": 0.02033231606432259,
+    "ci99": [
+     0.017607625357726656,
+     0.023153271602851636
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "L5 DA-Dg6 w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dg_w0.3_g6",
+   "mean": 0.0018038320761525968,
+   "sd": 0.011570766809699292,
+   "ci99": [
+    -0.0022460309459254764,
+    0.005584220742596761
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.003183765229913434,
+    0.006333180317860781
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.6166666666666667
+  },
+  "L1 E-Dgt_E w=0.7": {
+   "a": "E_w0.7",
+   "b": "Gt_w0.7_E_3_6_30",
+   "mean": 0.002971696908598702,
+   "sd": 0.01234187370505102,
+   "ci99": [
+    -0.0011244070322052424,
+    0.007029071781266105
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.0019456383034711967,
+    0.007719824000534472
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.6
+  },
+  "L2 DA-Dgt_DA w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Gt_w0.7_DA_3_6_30",
+   "mean": 0.0009975215023930414,
+   "sd": 0.011447489634358049,
+   "ci99": [
+    -0.0027291000779276144,
+    0.004736666081691696
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.0034577409660286524,
+    0.005487989100414267
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5833333333333334
+  },
+  "L3 DA-E w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "E_w0.7",
+   "mean": -0.0019539443083263406,
+   "sd": 0.01107545723795961,
+   "ci99": [
+    -0.0055962190273226515,
+    0.0015508331196295538
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.006592992440616819,
+    0.002129162395486316
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.43333333333333335,
+   "ref_earlier": {
+    "mean": 0.00016291643673659132,
+    "ci99": [
+     -0.0011419378272555687,
+     0.001479209618566307
+    ],
+    "decision": "equivalence"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "L4 DA-Dp w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dp_w0.7",
+   "mean": -0.0013056896898925503,
+   "sd": 0.011536851348309457,
+   "ci99": [
+    -0.004943801279884177,
+    0.002558370160168245
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.005602037158795053,
+    0.0034721793276299264
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.45,
+   "ref_earlier": {
+    "mean": 0.024720297620287622,
+    "ci99": [
+     0.022226784113439455,
+     0.027196903748347066
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "L5 DA-Dg6 w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dg_w0.7_g6",
+   "mean": 0.0005364464816565846,
+   "sd": 0.010768650675612059,
+   "ci99": [
+    -0.003073388175041198,
+    0.004028717754377133
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.003769895957738828,
+    0.004901709568455563
+   ],
+   "decision_bonferroni": "equivalence",
+   "share_pos": 0.5
+  }
+ },
+ "matching": {
+  "w=0.3 ref E": {
+   "profile": {
+    "gens": [
+     1,
+     25,
+     50,
+     100,
+     150
+    ],
+    "rel_entropy_gap": [
+     0.00040197815892742097,
+     0.0015498137165170399,
+     0.00408372507117447,
+     0.0002937657680121241,
+     0.0002151432527887736
+    ],
+    "qmax_gap": [
+     0.0016491337947149298,
+     0.0003664665776527687,
+     0.0035647605012502637,
+     0.0010521596623774276,
+     0.0023051959185446114
+    ],
+    "effective_distribution_gen50": null,
+    "effective_distribution_gen150": null
+   },
+   "rel_entropy_gap_mean_over_gens": 0.001573363156538773,
+   "abs_qmax_gap_mean_over_gens": 0.0017348146966615179,
+   "max_rel_entropy_gap": 0.005338897997953539,
+   "conform": true,
+   "schedule": "Gt_w0.3_E_3_6_90"
+  },
+  "w=0.3 ref DA": {
+   "profile": {
+    "gens": [
+     1,
+     25,
+     50,
+     100,
+     150
+    ],
+    "rel_entropy_gap": [
+     0.0011746418158442812,
+     0.0006349537018345725,
+     0.004601924702429347,
+     0.0002459998695612842,
+     0.0014768417371803706
+    ],
+    "qmax_gap": [
+     0.0013318926880585003,
+     0.0031768948278738662,
+     0.005335937380604283,
+     0.001000860069382492,
+     0.0025812739682239405
+    ],
+    "effective_distribution_gen50": null,
+    "effective_distribution_gen150": null
+   },
+   "rel_entropy_gap_mean_over_gens": 0.0016748362831778545,
+   "abs_qmax_gap_mean_over_gens": 0.0017021931744930301,
+   "max_rel_entropy_gap": 0.006313531982942411,
+   "conform": true,
+   "schedule": "Gt_w0.3_DA_3_6_90"
+  },
+  "w=0.7 ref E": {
+   "profile": {
+    "gens": [
+     1,
+     25,
+     50,
+     100,
+     150
+    ],
+    "rel_entropy_gap": [
+     0.0016412861650529384,
+     0.0009460343017319122,
+     0.006456779113914784,
+     0.0013298520633144941,
+     0.0027288465722295555
+    ],
+    "qmax_gap": [
+     0.0020419241065947613,
+     0.0008503507604091798,
+     0.0017125094466232116,
+     0.0025633049805442454,
+     0.0007974120100990301
+    ],
+    "effective_distribution_gen50": null,
+    "effective_distribution_gen150": null
+   },
+   "rel_entropy_gap_mean_over_gens": 0.0015750409026217508,
+   "abs_qmax_gap_mean_over_gens": 0.0016348691026064923,
+   "max_rel_entropy_gap": 0.006456779113914784,
+   "conform": true,
+   "schedule": "Gt_w0.7_E_3_6_30"
+  },
+  "w=0.7 ref DA": {
+   "profile": {
+    "gens": [
+     1,
+     25,
+     50,
+     100,
+     150
+    ],
+    "rel_entropy_gap": [
+     0.0004167728115113146,
+     0.0017319317170651123,
+     0.0017386060729206508,
+     0.003668506979493869,
+     0.003967570276241269
+    ],
+    "qmax_gap": [
+     0.00033583119954028184,
+     0.0006455142142322012,
+     0.00026852805786781175,
+     0.001744365785836588,
+     0.001129622473192815
+    ],
+    "effective_distribution_gen50": null,
+    "effective_distribution_gen150": null
+   },
+   "rel_entropy_gap_mean_over_gens": 0.0017185278325628963,
+   "abs_qmax_gap_mean_over_gens": 0.0018253798426365246,
+   "max_rel_entropy_gap": 0.0067772432230064645,
+   "conform": true,
+   "schedule": "Gt_w0.7_DA_3_6_30"
+  }
+ }
+}
+DRY OK True

@@ -1,0 +1,35 @@
+   3.6s
+   4.5s
+   5.5s
+PASS 1_partA_DA_DAS_DAL_bit_for_bit_vs_P16_stored
+   3.7s
+PASS 2a_E_bit_for_bit_vs_P17_tier1
+PASS 2b_Dg6_bit_for_bit_vs_P17_tier1
+   4.3s
+PASS 2c_Dg12_differs_from_Dg6_and_budget
+PASS 3a_SELL_constant_U_same_set_as_original
+PASS 3b_SELL_continuous_fitness_equals_original_set_ties_absent
+PASS 3c_DIV_matches_bruteforce
+   9.7s
+PASS 4_DA+DIV_budget_6040_log150_finite
+   DA+DIV diag front4_share 0.513 divergence 0.214
+   9.7s
+PASS 4_DA+SELL_budget_6040_log150_finite
+   DA+SELL diag front4_share 0.256 divergence 0.001
+   8.6s
+PASS 4_Dp+SELW_budget_6040_log150_finite
+   Dp+SELW diag front4_share 0.318 divergence 0.183
+PASS 5_selection_patch_restored
+   8.2s
+PASS 6_reproducible_DIV
+PASS 7_no_oracle_in_search_partB
+   4.3s
+PASS 8_DA+R1_budget_and_levels
+   5.6s
+PASS 8_DA+R1inv_budget_and_levels
+   4.7s
+PASS 8_DA+SCH_budget_and_levels
+   4.8s
+PASS 8_DA+P11_budget_and_levels
+PASS 9_SCH_L_then_S
+ALL True {'times': [3.6, 4.5, 5.5, 3.7, 4.3, 9.7, 9.7, 8.6, 8.2, 4.3, 5.6, 4.7, 4.8], 'DA+DIV': {'front4_share': 0.5132500000000001, 'divergence': 0.21399999999999997}, 'DA+SELL': {'front4_share': 0.25566666666666665, 'divergence': 0.0011666666666666676}, 'Dp+SELW': {'front4_share': 0.3180833333333334, 'divergence': 0.1835}, 'R1_share_L': 0.30666666666666664, 'R1inv_share_L': 0.7933333333333333, 'note': 'info only: not HV'}

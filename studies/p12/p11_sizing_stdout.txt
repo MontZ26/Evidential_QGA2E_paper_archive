@@ -1,0 +1,1 @@
+{"n_pilot": 30, "n_requis": 100, "n_retenu": 100, "any_infeasible_at_300": false} {'D1_E1-P1': (100, 0.0133, 0.0076), 'D2_interaction': (100, -0.0017, 0.0093)}

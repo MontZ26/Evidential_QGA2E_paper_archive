@@ -1,0 +1,3 @@
+# Amendement P7 — taille de confirmation n = 200 (décision de l'auteur)
+Date : 9 novembre 2026, 01:38 (Africa/Lagos). Message écrit de l'auteur : « ok put n=200 ».
+Contexte : le dimensionnement de H7.1 (méthode P6 v2.6 §8, simulation principale m = 1,0) a donné n_requis = n_retenu = 100 (puissance 100 % sur toute la grille, y compris m = 1,25 et 1,5). L'auteur demande n = 200 (graines 7200–7399), **avant toute lecture d'un résultat confirmatoire** : les 70 coquilles déjà produites (seeds 7200–7211, sous n = 100) ont été conservées sans être lues. Le rapport de dimensionnement reste publié à côté de n = 200. n figé ; aucune modification après lecture de résultats. Les hypothèses H7.1–H7.4, le test, la graine d'analyse 9701 et les arms M2 descriptifs sont inchangés.

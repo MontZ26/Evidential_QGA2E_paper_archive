@@ -1,0 +1,18 @@
+{
+ "tests": {
+  "1_harden_rows_sum_1_zero_outside_M_more_concentrated": true,
+  "2a_DA_bit_for_bit_vs_tier1": true,
+  "2b_DAg_gamma1_equals_DA": true,
+  "3a_DAg6_budget_6040_and_differs": true,
+  "3b_DAg6_more_concentrated_than_DA": true,
+  "3c_target_patch_restored": true,
+  "4_reproducible": true,
+  "5_no_oracle_in_search": true,
+  "6_Dg_bit_for_bit_vs_tier1": true
+ },
+ "info": {
+  "qmax_DA": 0.695546091525302,
+  "qmax_DAg6": 0.8932949968600746,
+  "note": "info only: not HV"
+ }
+}

@@ -1,0 +1,4 @@
+# Amendement P6 v2.6 — taille de confirmation n = 200 (décision de l'auteur)
+Date : 8 novembre 2026, 23:36 (Africa/Lagos). Auteur : Dr Montassar Zaghdoud. Message écrit de l'auteur : « put n=200 ».
+Contexte : décision prise **avant** toute graine de confirmation et **avant** la lecture du rapport de dimensionnement (simulation de puissance du pilote encore en cours). Seuls les écarts-types du pilote (Λ : 0,0087 ; Γ : 0,0197) avaient été vus.
+Effet : n = 200 (graines 6200–6399) remplace la règle « plus petite valeur de grille ≥ n_requis » de v2.6 §8 pour la taille de confirmation. Le rapport de dimensionnement (n_f, n_s, n_contraste, n_requis, sensibilité) reste produit et sera rapporté intégralement à côté de n = 200 ; si n_requis > 200 pour un contraste, l'insuffisance de puissance sera déclarée. Aucun autre élément de v2.6 n'est modifié. n est figé : aucun changement après le début de la confirmation.

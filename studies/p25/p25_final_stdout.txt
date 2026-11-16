@@ -1,0 +1,217 @@
+PRECHECK OK
+{
+ "contrasts": {
+  "K1 DA-E w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "E_w0.3",
+   "mean": -0.00047827545800349555,
+   "sd": 0.003038697350287237,
+   "ci99": [
+    -0.0014868132016455224,
+    0.0005328488778660028
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.0016758993347447512,
+    0.0007030272641340362
+   ],
+   "decision_bonferroni": "equivalence",
+   "share_pos": 0.4166666666666667,
+   "ref_earlier": {
+    "mean": -0.0008589459954784656,
+    "ci99": [
+     -0.0024910357654124014,
+     0.0007296785939795942
+    ],
+    "decision": "equivalence"
+   },
+   "same_direction": true,
+   "same_class": true
+  },
+  "K2 DA-Dg_cal w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dg_w0.3_g6",
+   "mean": -0.0071694078730783015,
+   "sd": 0.008346273811344361,
+   "ci99": [
+    -0.009920927063312605,
+    -0.00444069250948044
+   ],
+   "decision": "inferiority",
+   "ci_bonferroni": [
+    -0.010465872662725976,
+    -0.003988331119607248
+   ],
+   "decision_bonferroni": "inferiority",
+   "share_pos": 0.21666666666666667
+  },
+  "K3 Dg_cal-E w=0.3": {
+   "a": "Dg_w0.3_g6",
+   "b": "E_w0.3",
+   "mean": 0.006691132415074806,
+   "sd": 0.008802102898727186,
+   "ci99": [
+    0.003790065602253159,
+    0.009640622006659586
+   ],
+   "decision": "superiority",
+   "ci_bonferroni": [
+    0.003328357524083175,
+    0.010141302917928472
+   ],
+   "decision_bonferroni": "superiority",
+   "share_pos": 0.75
+  },
+  "K4 DA-Dp w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dp_w0.3",
+   "mean": 0.021550983445448934,
+   "sd": 0.008241898441771988,
+   "ci99": [
+    0.01885349885757186,
+    0.024380754160402328
+   ],
+   "decision": "superiority",
+   "ci_bonferroni": [
+    0.01841686840514652,
+    0.024831156453362566
+   ],
+   "decision_bonferroni": "superiority",
+   "share_pos": 1.0
+  },
+  "K1 DA-E w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "E_w0.7",
+   "mean": 7.917853331712207e-05,
+   "sd": 0.005667087727724376,
+   "ci99": [
+    -0.0018134622449917483,
+    0.0019043129455336664
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.0021173911618960735,
+    0.0021949554397270874
+   ],
+   "decision_bonferroni": "equivalence",
+   "share_pos": 0.48333333333333334,
+   "ref_earlier": {
+    "mean": 0.003937572580788688,
+    "ci99": [
+     0.0024068709125060635,
+     0.005525559403614389
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": true,
+   "same_class": false
+  },
+  "K2 DA-Dg_cal w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dg_w0.7_g4",
+   "mean": -0.004734945551291309,
+   "sd": 0.008740651212181262,
+   "ci99": [
+    -0.007590667355511241,
+    -0.0018773789865468558
+   ],
+   "decision": "inferiority",
+   "ci_bonferroni": [
+    -0.00802445904437076,
+    -0.0013798003512456771
+   ],
+   "decision_bonferroni": "inferiority",
+   "share_pos": 0.3,
+   "ref_earlier": {
+    "mean": -0.010497149109575842,
+    "ci99": [
+     -0.01305313043710904,
+     -0.00785097667143073
+    ],
+    "decision": "inferiority"
+   },
+   "same_direction": true,
+   "same_class": true
+  },
+  "K3 Dg_cal-E w=0.7": {
+   "a": "Dg_w0.7_g4",
+   "b": "E_w0.7",
+   "mean": 0.004814124084608432,
+   "sd": 0.009246792061493751,
+   "ci99": [
+    0.0017834385922983653,
+    0.007831617377852181
+   ],
+   "decision": "superiority",
+   "ci_bonferroni": [
+    0.0012450713119295412,
+    0.008497433000392305
+   ],
+   "decision_bonferroni": "superiority",
+   "share_pos": 0.6833333333333333
+  },
+  "K4 DA-Dp w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dp_w0.7",
+   "mean": 0.02163100221825998,
+   "sd": 0.009033721371961656,
+   "ci99": [
+    0.018798374795706913,
+    0.02473297786541682
+   ],
+   "decision": "superiority",
+   "ci_bonferroni": [
+    0.018193440356991646,
+    0.02524986765893702
+   ],
+   "decision_bonferroni": "superiority",
+   "share_pos": 1.0
+  },
+  "K5 DA-Dg6 w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dg_w0.3_g6",
+   "mean": -0.0071694078730783015,
+   "sd": 0.008346273811344361,
+   "ci99": [
+    -0.009920927063312605,
+    -0.00444069250948044
+   ],
+   "decision": "inferiority",
+   "ci_bonferroni": [
+    -0.010465872662725976,
+    -0.003988331119607248
+   ],
+   "decision_bonferroni": "inferiority",
+   "share_pos": 0.21666666666666667
+  }
+ },
+ "matching": {
+  "w=0.3 Dg_cal": {
+   "rel_entropy_gap": 0.22997634166911315,
+   "abs_qmax_gap": 0.1330778955644042,
+   "conform": false,
+   "entropy_ref": 1.1290032375941261,
+   "entropy_other": 0.8693592032796444,
+   "qmax_ref": 0.5757467368990117,
+   "qmax_other": 0.7088246324634159
+  },
+  "w=0.3 Dg6": {
+   "rel_entropy_gap": 0.22997634166911315,
+   "abs_qmax_gap": 0.1330778955644042,
+   "conform": false,
+   "entropy_ref": 1.1290032375941261,
+   "entropy_other": 0.8693592032796444,
+   "qmax_ref": 0.5757467368990117,
+   "qmax_other": 0.7088246324634159
+  },
+  "w=0.7 Dg_cal": {
+   "rel_entropy_gap": 0.05877575463622137,
+   "abs_qmax_gap": 0.01976865434443198,
+   "conform": true,
+   "entropy_ref": 0.6855065223935701,
+   "entropy_other": 0.6452153592318363,
+   "qmax_ref": 0.7869973157468457,
+   "qmax_other": 0.8067659700912777
+  }
+ }
+}

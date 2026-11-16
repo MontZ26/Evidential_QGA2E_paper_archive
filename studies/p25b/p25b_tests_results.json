@@ -1,0 +1,29 @@
+{
+ "file_hashes_match": true,
+ "n_nodes": {
+  "B-X": 101,
+  "B-M": 101,
+  "B-G": 241,
+  "B-L": 561,
+  "B-O": 242,
+  "B-H": 201
+ },
+ "expected_nodes": true,
+ "deterministic": true,
+ "seed_differs": true,
+ "n_pts": 101,
+ "in_box": true,
+ "distinct_customers": true,
+ "feasible_of_10": {
+  "B-X": 10,
+  "B-M": 10,
+  "B-G": 10,
+  "B-L": 10,
+  "B-O": 10,
+  "B-H": 10
+ },
+ "guard": true,
+ "budget_ok": true,
+ "finite": true,
+ "pass": true
+}

@@ -1,0 +1,16 @@
+{
+ "termination_and_cap_reached": true,
+ "allowed_teams": true,
+ "fixed_set_untouched_elites": true,
+ "determinism": true,
+ "idempotence_under_cap": true,
+ "individual_alone_unchanged": true,
+ "changes_bounded": true,
+ "minimal_intervention": true,
+ "violation_declared_when_allowance_too_small": true,
+ "real_population_cap_or_declared_violation": true,
+ "hereditary_subset": true,
+ "budget_exact_6040_dec_on": true,
+ "ls_guard_active_no_eval_consumed": true,
+ "no_oracle_in_search_identical_search_front_and_decisions": true
+}

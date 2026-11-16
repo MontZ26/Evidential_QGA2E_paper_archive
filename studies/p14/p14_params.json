@@ -1,0 +1,15 @@
+{
+ "chosen": {
+  "w": 0.3,
+  "eps": 0.02,
+  "dec": {
+   "sigma": 0.7,
+   "n_max": 2,
+   "rho_max": 0.2,
+   "r_max": 3
+  },
+  "gamma": 6.0,
+  "gamma_e": 0.15
+ },
+ "status": "gamma=6 = best attempt on grid, G-N NOT satisfied (non-conforming, descriptive)"
+}

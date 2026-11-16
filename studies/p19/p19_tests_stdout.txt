@@ -1,0 +1,11 @@
+PASS 1_harden_rows_sum_1_zero_outside_M_more_concentrated
+PASS 2a_DA_bit_for_bit_vs_tier1
+PASS 2b_DAg_gamma1_equals_DA
+PASS 3a_DAg6_budget_6040_and_differs
+PASS 3b_DAg6_more_concentrated_than_DA
+   q_max DA 0.696 DAg6 0.893
+PASS 3c_target_patch_restored
+PASS 4_reproducible
+PASS 5_no_oracle_in_search
+PASS 6_Dg_bit_for_bit_vs_tier1
+ALL True

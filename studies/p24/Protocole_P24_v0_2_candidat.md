@@ -1,0 +1,57 @@
+# P24 v0.2 — Sensibilité locale des conclusions de P23 à w, σ et γ > 6 (QGA2-E) — CANDIDAT
+
+**Statut : PROTOCOLE CANDIDAT, NON LANCÉ.** Date : 14 novembre 2026. Remplace v0.1 (conservée). Aucune implémentation, aucun calcul, aucun fichier existant modifié.
+**Autorisation.** Message du Dr Montassar Zaghdoud, 14 nov. 2026, 22:40 : « Ok pour un protocole de sensibilité (w, σ, γ > 6) » (lu comme : rédaction seulement). La présente v0.2 intègre une relecture externe reçue à 22:44 (entrée, non autorisation) après vérification de chaque point. **Implémenter, tester, calibrer, geler et exécuter exigent une autorisation écrite distincte.**
+**Aucune revendication de nouveauté** (RS1 non faite). Code et protocoles gelés (P3 à P23) non modifiés ; P24 n'ajoute que de nouveaux fichiers.
+
+## 1. Question
+Les conclusions de P23 (et, à w = 0,3, de P10 à P22) tiennent-elles quand on change raisonnablement w (poids de la source ; 0,3 est HV-informé et au bord de la grille de P10), σ (seuil de similarité de DA, jamais testé) et γ de Dg (plafonné à 6, bord de la grille) ? **Robustesse locale** : ni généralisation à d'autres problèmes ou algorithmes, ni indépendance rétroactive de w = 0,3 vis-à-vis de la HV. Les conclusions ne valent que pour les valeurs testées.
+
+## 2. Référence et appariement
+Référence = résultats de P23 (w = 0,3, σ = 0,7, λ = 1, γ = 6) sur SC6 × graines 12000–12099. Les bras E, DA(1) et Dg(6) de P23 sont réutilisés (déterministes ; reproduction bit à bit vérifiée sur un échantillon avant gel). Les nouveaux bras sont exécutés sur les **mêmes** graines et instances : toutes les comparaisons entre réglages sont appariées par graine. Ces HV ont déjà été vues (P23) ; déclaré. Ce n'est pas une réplication indépendante.
+
+## 3. Bras (QGA2-E, première front, budget 6 040, HV oracle, comme P23)
+- **Bloc w** (σ = 0,7, λ = 1) : w ∈ {0,15 ; 0,5 ; 0,7} (D24-1). Pour chaque w : E, Dp, DA(1), Dg(γ_w). Au baseline w = 0,3 : ajout de Dp. **Justification de la grille** : 0,3 est le bord bas de la grille de P10 {0,3 ; 0,5 ; 0,7 ; 0,9} ; 0,15 explore le côté non exploré ; 0,5 et 0,7 prolongent la grille de P10 ; 0,9 est écarté pour limiter le coût (4 familles de plus si retenu ; alternative : remplacer 0,15 par 0,9, D24-1).
+- **Bloc σ** (w = 0,3, λ = 1) : σ ∈ {0,6 ; 0,8} (D24-2) ; DA(1, σ) et Dg(γ_σ) ; E réutilisé. Ne vaut que pour ces deux variations locales.
+- **Bloc γ** (w = 0,3, σ = 0,7) : **bras fixes obligatoires** Dg(8) et Dg(12) ; si la calibration retient γ_cal ∉ {6 ; 8 ; 12} au baseline, Dg(γ_cal) est un **bras supplémentaire** (jamais un remplacement).
+- **Règle de réutilisation** : Dg ne dépend pas de σ ; pour un σ, si γ_σ ∈ {6 ; 8 ; 12}, le bras Dg correspondant du bloc γ ou de P23 est réutilisé, sinon un nouveau bras Dg(γ_σ) est exécuté.
+- **Relances journalisées** (§7) de DA(1) et Dg(6) au baseline.
+**Plafond de familles de 600 runs nouvelles** : bloc w 12 ; Dp(w = 0,3) 1 ; DA(σ) 2 ; Dg(γ_σ) 2 au plus ; Dg(8), Dg(12) 2 ; Dg(γ_cal) 1 au plus ; relances journalisées 2 ⇒ **au plus 22**. Hors périmètre (priorité secondaire) : ε, rotation, budget, population, autres familles d'instances, Rρ, Rmix.
+
+## 4. Contrastes (marge δ = 0,005 ; règle de décision de P23)
+**16 nouveaux contrastes** (corrige le « 15 » de v0.1) :
+- **12 contrastes de robustesse de P23** : DA(1) − Dg(γ_w) et DA(1) − E pour w ∈ {0,15 ; 0,5 ; 0,7} (6) ; DA(1, σ) − Dg(γ_σ) et DA(1, σ) − E pour σ ∈ {0,6 ; 0,8} (4) ; DA(1) − Dg(8) et DA(1) − Dg(12) à w = 0,3 (2).
+- **4 contrastes E − Dp** pour w ∈ {0,15 ; 0,3 ; 0,5 ; 0,7} (non liés à une conclusion confirmatoire de P23 ; aucune classe de référence P23).
+Les contrastes DA − Dg(6) et DA − E au baseline sont ceux de P23 (références, non recomptés).
+**Critère de robustesse (3 dimensions)**, pour les 12 contrastes de robustesse, par rapport à la classe et à l'estimation de P23 :
+1. **Direction** : même signe d'estimation, et la même position de l'IC par rapport à 0 (négatif, contenant 0, positif).
+2. **Importance pratique** : même classe au regard de δ (supériorité, infériorité, équivalence, non concluant).
+3. **Amplitude** : |estimation − estimation baseline| ≤ δ = 0,005.
+Verdict par contraste : « maintenu » si les trois dimensions sont préservées ; « partiellement maintenu » si la direction l'est mais pas la classe ou l'amplitude (par exemple un IC qui passe juste de l'autre côté de 0 avec une estimation voisine) ; « modifié » si la direction change. Les trois dimensions sont rapportées séparément.
+**Contrastes E − Dp** : décrits avec la règle de décision de P23 ; aucune qualification « maintenu » ; référence descriptive externe (autres graines, études antérieures) : E − Dp ≈ +0,04 à +0,046.
+**Statistique.** Unité : la graine. Pour chaque graine, la HV de chaque bras est la moyenne sur les six scénarios ; le contraste de chaque graine est la différence appariée des deux bras ; le bootstrap percentile (B = 20 000) rééchantillonne les **graines**, en gardant ensemble, pour chaque graine tirée, tous les bras et les six scénarios. IC à 99 % marginaux comme P23 (D24-5) ; **limite déclarée** : avec 16 décisions, les IC marginaux ne garantissent pas une couverture simultanée à 99 % de la famille. En complément, les décisions sont rapportées aussi avec des IC de niveau 1 − 0,01/k par sous-famille (k = 6, 4, 2, 4 ; Bonferroni), à titre de sensibilité ; le critère de robustesse utilise les IC marginaux.
+Secondaires (IC 95 %, descriptifs) : par scénario et par type R/RC/C (moyenne arithmétique, par graine, des deux écarts S4 et S5) ; écart de contraste entre réglages (apparié) ; tendances selon w, σ, γ sans hypothèse de monotonie.
+
+## 5. Calibration, vérification et analyse : trois étapes distinctes
+**(a) Sélection de γ sur SC3** (sans HV) : graines de calibration SC3 × 13700–13714 (plage à vérifier contre le registre), tests techniques 13900–13909. Grille γ ∈ {1 ; 1,5 ; 2 ; 3 ; 4 ; 6 ; 8 ; 10 ; 12 ; 16}. Pour chaque w (et chaque σ) : comparaison de la cible de DA(1) à celle de Dg(γ).
+**Métrique exacte (identique à la calibration de P23)** : pour chaque run, moyenne sur les générations 1 à 150 de l'entropie q_ent et de q_max de la cible, puis moyenne sur les runs. Conforme si écart relatif d'entropie ≤ 10 % et |Δq_max| ≤ 0,05 ; parmi les conformes, plus petit écart d'entropie puis plus petit |Δq_max| ; sinon J = gap² + (qgap/0,05)², meilleur essai déclaré. Si γ_cal est une borne de grille (1 ou 16), c'est déclaré comme limite ; aucune extension après coup. Le script de calibration ne calcule ni ne lit aucune HV (test dédié).
+**(b) Vérification de l'appariement sur SC6** (après exécution, avant lecture des HV du contraste) : mêmes métriques, mêmes seuils, même fenêtre (générations 1–150), pour chaque contraste DA − Dg. **Règle préalable : si le γ choisi sur SC3 ne respecte pas les seuils sur SC6, le contraste est déclaré non conforme à l'appariement prévu ; aucun recalage sur SC6.** Sont rapportés en plus, à titre descriptif non conditionnel : q_max et entropie à la génération 1 et à la génération 150 (l'annexe de P23 a montré que l'appariement en moyenne n'implique ni états initiaux ni trajectoires comparables).
+**(c) Analyse des HV** sur SC6 × 12000–12099, une seule fois.
+Objectif de calibration (appariement) et objectif de performance (ordre des HV) restent distincts : aucun γ n'est choisi sur la HV.
+
+## 6. Tests (avant gel)
+T1 reproduction bit à bit de tâches P23 stockées (E, DA(1), Dg(6) au baseline). T2 w et σ n'agissent que par les paramètres déclarés ; DA(λ = 0) = E à chaque w. T3 cibles normalisées, finies, nulles hors masque pour tout γ de la grille. T4 budget 6 040 exact pour tous les bras. T5 aucune fuite de l'oracle. T6 reproductibilité. T7 code et protocoles antérieurs inchangés (hachages P18 à P23). T8 le script de calibration ne contient aucun champ HV. T9 la journalisation des fréquences ne modifie pas la recherche (HV et archive identiques bit à bit). T10 contrôle automatique des graines contre le registre complet. T11 cas limites (une équipe admissible, N = 1).
+
+## 7. Instrumentation de la distribution effective
+Journalisation inerte (sans RNG, sans effet sur la recherche), pour tous les nouveaux bras et pour les relances de DA(1) et Dg(6), aux générations 1, 25, 50, 100, 150 : fréquences de décodage empiriques par patient (patients × équipes, calculées sur les 40 enfants de la génération).
+**Définitions préenregistrées** (descriptives, sans interprétation causale) : unité de comparaison = (graine, scénario, génération) entre deux bras. Pour chaque patient modifiable (≥ 2 équipes admissibles ; le masque M est le même pour tous les bras d'une instance), f_A et f_B sont les fréquences sur ses équipes admissibles ; **L1** = Σ_t |f_A(t) − f_B(t)| (valeur entre 0 et 2) ; **Jensen–Shannon** en logarithme base 2 (entre 0 et 1), avec 0·log 0 = 0 et la moyenne de f_A et f_B comme référence. Agrégation : moyenne sur les patients modifiables, puis moyenne sur les graines, **rapportée par scénario avant toute moyenne globale** (moyenne des six scénarios). Relation avec l'écart de HV : corrélation de rang descriptive entre graines, au sein de chaque scénario. Les relances journalisées de DA(1) et Dg(6) doivent redonner exactement les HV stockées de P23 (contrôle bit à bit) : elles ne servent qu'à obtenir les fréquences.
+
+## 8. Plan d'exécution et durée
+Protocole confirmé → code et tests → pilote technique (13900–13909, durée mesurée) → calibration → sélection → gel avec hachages → exécution sous surveillance → précontrôle → vérification de l'appariement SC6 → analyse unique → rapport. Pas de relance pour améliorer un résultat ; hypothèses, marges et règles inchangées après lecture ; incidents déclarés (y compris toute lecture de HV avant gel) ; dépôt GitHub intact.
+**Durée estimée** (≈ 14,5 minutes par famille de 600 runs sur 2 cœurs, mesuré en P23) : 19 familles ≈ 4 h 35 ; 22 familles ≈ 5 h 20 ; calibration (≈ 46 familles de 45 runs, environ 45 minutes) ; total environ 5 h 20 à 6 h 10 selon le nombre de familles ; à confirmer au pilote. La version v0.1 annonçait 4 à 5 h, ce qui était optimiste.
+
+## 9. Lecture des issues
+Conclusions maintenues : l'absence d'avantage de DA sur Dg apparié et l'équivalence DA ≈ E tiennent dans le voisinage testé. Conclusions modifiées pour certains w ou σ : le papier doit présenter les conditions de fonctionnement des représentations. Si un γ > 6 apparie mieux DA(1) **et** modifie le contraste de HV, cela montre que la conclusion dépend du choix de calibration dans les conditions testées ; cela ne démontre pas que la différence initiale était exclusivement due à un mauvais appariement. Si γ_cal est au bord de la grille, la recherche de calibration atteint encore sa borne. Aucune conclusion hors de QGA2-E, SC6, budget 6 040 et plages testées.
+
+## 10. Décisions à confirmer
+D24-1 grille w {0,15 ; 0,5 ; 0,7} ou alternative {0,5 ; 0,7 ; 0,9} ou les quatre ; D24-2 grille σ {0,6 ; 0,8} ; D24-3 grille γ jusqu'à 16, bras fixes Dg(8), Dg(12), γ_cal supplémentaire ; D24-4 relances journalisées de DA(1) et Dg(6) ; D24-5 IC marginaux à 99 % comme critère, avec Bonferroni par sous-famille en sensibilité (ou Bonferroni comme critère principal) ; D24-6 graines (12000–12099 réutilisées, calibration 13700–13714, tests 13900–13909, contrôle de registre) ; D24-7 critère de robustesse en trois dimensions (§4) et seuil d'amplitude δ ; D24-8 définitions des distances (§7) ; D24-9 ordre par rapport au papier et à RS1.

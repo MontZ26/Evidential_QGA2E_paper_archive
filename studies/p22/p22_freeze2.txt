@@ -1,0 +1,13 @@
+# P22 freeze 2 (p22_an.py G7 check corrected; every other hash identical to freeze 1)
+bc30b06d8ac422555459b47d9759f3afc0609636f34eaf5775f92654fca34c20  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/Protocole_P22_v1_0.md
+7b2f2252fcb966092ce766772f0af59ae48b1dc520d3dc8dd08f5ca162f9e298  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/p22_calib.json
+25d4b67906d79e5bf9605e36755f3becaa7923c66d0aa054c01cb74e7182473c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/p22_gamma.json
+421eef059ec370091740f9dfeccf0e9e6c6953dd6cf2579023422661d10c6cdb  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/p22_tests_results.json
+b63e1b4b2d03a9fed52ec7dc0b530b058a03eb4f7f8908ff211b92740d720f22  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22.py
+d94928bd1d68c5117b3c2195c522cdad6ffe1b09eb82c9e3ea9d9fe4875c77ca  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_tests.py
+6476e6dcb3e18a0d3e22edbba0976fbff999c6d4bbe399debfe58b47f766ee92  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_calib.py
+3f2516eb78b1b47a07b353279756fb3c03735307b34111c458dad4f237d0c361  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_select.py
+37b0498b346da933bdd3bb16a1c38e1277a607f0f2c335e43dc79247e7993128  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_run.py
+1d02490f1996ea7174dd24ddddc5f0feb80faef69497971aecfe95919519de68  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_an.py
+4592b3e3dc4d189a3e71e1259037d6ad8b38f9244b9285b204f1782681f71573  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/p14_params.json
+c442453cc004c587a3b2cda54eccd6bd8981ee607564de2efbda444c22133231  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p14/code/p14.py

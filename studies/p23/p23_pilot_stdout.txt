@@ -1,0 +1,1 @@
+pilot 20 tasks 246 s; est main (600 tasks, 2 procs) 1.95 h; problems: []

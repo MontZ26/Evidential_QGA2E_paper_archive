@@ -1,0 +1,278 @@
+PRECHECK OK
+{
+ "contrasts": {
+  "K1 DA-E w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "E_w0.3",
+   "mean": 0.0009380030517018745,
+   "sd": 0.011942233550981294,
+   "ci99": [
+    -0.003029425448294837,
+    0.0047932182468849475
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.0036847729308234485,
+    0.005402585154646721
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5166666666666667,
+   "ref_earlier": {
+    "mean": -0.00047827545800349555,
+    "ci99": [
+     -0.0014868132016455224,
+     0.0005328488778660028
+    ],
+    "decision": "equivalence"
+   },
+   "same_direction": false,
+   "same_class": true
+  },
+  "K2 DA-Dg_cal w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dg_w0.3_g4",
+   "mean": 0.00013636019578926276,
+   "sd": 0.013230577104629538,
+   "ci99": [
+    -0.004295747157657733,
+    0.004568906092312958
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.004978359024642989,
+    0.005221195917714643
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5,
+   "ref_earlier": {
+    "mean": -0.0071694078730783015,
+    "ci99": [
+     -0.009920927063312605,
+     -0.00444069250948044
+    ],
+    "decision": "inferiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "K3 Dg_cal-E w=0.3": {
+   "a": "Dg_w0.3_g4",
+   "b": "E_w0.3",
+   "mean": 0.0008016428559126117,
+   "sd": 0.011343279298739614,
+   "ci99": [
+    -0.0029007563487144766,
+    0.004479374923059911
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.003561558404478735,
+    0.005310798788934583
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5,
+   "ref_earlier": {
+    "mean": 0.006691132415074806,
+    "ci99": [
+     0.003790065602253159,
+     0.009640622006659586
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": true,
+   "same_class": false
+  },
+  "K4 DA-Dp w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dp_w0.3",
+   "mean": 0.0017930733972368672,
+   "sd": 0.011200278612871107,
+   "ci99": [
+    -0.001981790114302797,
+    0.005583133206351065
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.0026624393517959153,
+    0.006214318636536303
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.6166666666666667,
+   "ref_earlier": {
+    "mean": 0.021550983445448934,
+    "ci99": [
+     0.01885349885757186,
+     0.024380754160402328
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": true,
+   "same_class": false
+  },
+  "K1 DA-E w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "E_w0.7",
+   "mean": 0.0004261394396560573,
+   "sd": 0.011419357376382945,
+   "ci99": [
+    -0.0033451975819660928,
+    0.004183434681948181
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.003999694950369311,
+    0.004829305654879667
+   ],
+   "decision_bonferroni": "equivalence",
+   "share_pos": 0.5333333333333333,
+   "ref_earlier": {
+    "mean": 7.917853331712207e-05,
+    "ci99": [
+     -0.0018134622449917483,
+     0.0019043129455336664
+    ],
+    "decision": "equivalence"
+   },
+   "same_direction": true,
+   "same_class": true
+  },
+  "K2 DA-Dg_cal w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dg_w0.7_g4",
+   "mean": 0.0010946655266059655,
+   "sd": 0.01343286736058529,
+   "ci99": [
+    -0.0033857139781318956,
+    0.005514917013026176
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.0041437767278688425,
+    0.006306419335082188
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5333333333333333,
+   "ref_earlier": {
+    "mean": -0.004734945551291309,
+    "ci99": [
+     -0.007590667355511241,
+     -0.0018773789865468558
+    ],
+    "decision": "inferiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "K3 Dg_cal-E w=0.7": {
+   "a": "Dg_w0.7_g4",
+   "b": "E_w0.7",
+   "mean": -0.0006685260869499082,
+   "sd": 0.011648245570165895,
+   "ci99": [
+    -0.004574127818317799,
+    0.00312390452028113
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.005197861023410527,
+    0.003800190625922426
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5,
+   "ref_earlier": {
+    "mean": 0.004814124084608432,
+    "ci99": [
+     0.0017834385922983653,
+     0.007831617377852181
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  },
+  "K4 DA-Dp w=0.7": {
+   "a": "DA_w0.7_s0.7",
+   "b": "Dp_w0.7",
+   "mean": 0.0006723958166557612,
+   "sd": 0.01174221237428794,
+   "ci99": [
+    -0.0032603897022781135,
+    0.004601674132597411
+   ],
+   "decision": "equivalence",
+   "ci_bonferroni": [
+    -0.0039667069234231404,
+    0.005309654400779451
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.55,
+   "ref_earlier": {
+    "mean": 0.02163100221825998,
+    "ci99": [
+     0.018798374795706913,
+     0.02473297786541682
+    ],
+    "decision": "superiority"
+   },
+   "same_direction": true,
+   "same_class": false
+  },
+  "K5 DA-Dg6 w=0.3": {
+   "a": "DA_w0.3_s0.7",
+   "b": "Dg_w0.3_g6",
+   "mean": 0.0016333387880483865,
+   "sd": 0.012693402383451404,
+   "ci99": [
+    -0.00248850172797022,
+    0.005797758679108603
+   ],
+   "decision": "inconclusive",
+   "ci_bonferroni": [
+    -0.003237657870316852,
+    0.006447487614437088
+   ],
+   "decision_bonferroni": "inconclusive",
+   "share_pos": 0.5333333333333333,
+   "ref_earlier": {
+    "mean": -0.0071694078730783015,
+    "ci99": [
+     -0.009920927063312605,
+     -0.00444069250948044
+    ],
+    "decision": "inferiority"
+   },
+   "same_direction": false,
+   "same_class": false
+  }
+ },
+ "matching": {
+  "w=0.3 Dg_cal": {
+   "rel_entropy_gap": 4.815637628564812e-05,
+   "abs_qmax_gap": 0.00010486616837845908,
+   "conform": true,
+   "entropy_ref": 1.0499099890311598,
+   "entropy_other": 1.049859429170662,
+   "qmax_ref": 0.45006378009102593,
+   "qmax_other": 0.4499589139226475
+  },
+  "w=0.3 Dg6": {
+   "rel_entropy_gap": 5.696560480977563e-05,
+   "abs_qmax_gap": 0.00013459197141935109,
+   "conform": true,
+   "entropy_ref": 1.0499099890311598,
+   "entropy_other": 1.0498501802736389,
+   "qmax_ref": 0.45006378009102593,
+   "qmax_other": 0.4499291881196066
+  },
+  "w=0.7 Dg_cal": {
+   "rel_entropy_gap": 8.315056802208011e-05,
+   "abs_qmax_gap": 0.0002344508806005341,
+   "conform": true,
+   "entropy_ref": 1.0501431274314144,
+   "entropy_other": 1.0502304474289648,
+   "qmax_ref": 0.45014144983137794,
+   "qmax_other": 0.4499069989507774
+  }
+ }
+}
+DRY OK True

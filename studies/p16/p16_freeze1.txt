@@ -1,0 +1,9 @@
+# P16 phase D freeze 2026-11-11T03:53:02Z
+06ae66c30e371cc737b0786c03bde5bf28a39a3236b107a3253b522993e46423  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/Protocole_P16_v0_4.md
+74e8b9c8d31b5364971407be8c22dea7b1c8b59062eb682938d02cdbf24fb287  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/p16_thresholds.json
+ffb2c69e80cff62814de9ebc71456b570d558084ca2eae6592112837d79cdd1c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/p16_tests_results.json
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_params.json
+fc6d68467706643b785f7cc17537576425093ca1e04e44e4ecb4d99f3f20ced5  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/code/p16.py
+c121ebccad664a5726e45e5953aa29a04785a7023427a7c36bc2a6f6fedb9e03  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/code/p16_run.py
+fefb1a2331fe177c0be39fa5290be9f8fd043c9e293172649ac36630ac99762e  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/code/p16_an.py
+2205b6d29da19e64294982ebc622b5c74af3b90262c579bf6f12b12e70b7d362  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p16/code/p16_tests.py

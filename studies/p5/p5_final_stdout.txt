@@ -1,0 +1,60 @@
+{
+ "primary_H5.1": {
+  "n": 300,
+  "mean": 0.054751502826296324,
+  "median": 0.054409452916383494,
+  "ci_boot95": [
+   0.05343698420047284,
+   0.05610123678503166
+  ],
+  "n_pos": 300,
+  "n_neg": 0,
+  "n_zero": 0,
+  "rank_biserial": 1.0,
+  "p_raw": 6.083559849691437e-51,
+  "test_status": "ok",
+  "practically_null": false,
+  "hypothesis": "H5.1 HV(C2) != HV(C3)",
+  "reject_at_0.05": true,
+  "decision": "C2 > C3: advantage of the rotation"
+ },
+ "secondary_holm": {
+  "H5.2 C2 vs C2a": {
+   "n": 300,
+   "mean": 0.0047933693667559125,
+   "median": 0.0047614536631028215,
+   "ci_boot95": [
+    0.003388653934508166,
+    0.006183282274967345
+   ],
+   "n_pos": 196,
+   "n_neg": 104,
+   "n_zero": 0,
+   "rank_biserial": 0.4184274640088594,
+   "p_raw": 3.350383840911491e-10,
+   "test_status": "ok",
+   "practically_null": true,
+   "p_holm": 3.350383840911491e-10,
+   "reject_at_0.05": true
+  },
+  "H5.4 C2 vs C0b": {
+   "n": 300,
+   "mean": -0.03841405567689203,
+   "median": -0.03713953613950238,
+   "ci_boot95": [
+    -0.03979215803150139,
+    -0.03701950650103114
+   ],
+   "n_pos": 0,
+   "n_neg": 300,
+   "n_zero": 0,
+   "rank_biserial": -1.0,
+   "p_raw": 6.083559849691437e-51,
+   "test_status": "ok",
+   "practically_null": false,
+   "p_holm": 1.2167119699382873e-50,
+   "reject_at_0.05": true
+  }
+ }
+}
+n used 300

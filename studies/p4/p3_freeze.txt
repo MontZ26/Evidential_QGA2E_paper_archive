@@ -1,0 +1,19 @@
+# P3 freeze 2026-11-07T11:45:24Z (protocol v1.1; author authorisation 7 Nov 2026 11:53 Tunis)
+024ba7d3edc8508842cd75cc435e698c0463e2ce87ff589b67fceeba4f881d22  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/Protocol_P3_Paper1_v1_1.md
+aaf27d8d78ee5ef4f5c4ff99c08651da92349091e56233735c50307f056e0300  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/Protocol_P3_Paper1_v1_0.md
+b242456d259982dac77719413f5d84be52ca8f9fc51258397a7741f1174a8b89  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3.py
+5611a29047428251b16a634dc4b084a7aa772ae465f5c5fd18e18ca6b8d57df5  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_run.py
+b2b72835acaceaafad036650bd3caa41a9ef39925c90bb9f555fd94f772b9575  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_tests.py
+e8d672dc4974e408c8f2c287819402995a0e13563d4e9841a4ee632cdc4bc9ee  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p3_tune.py
+010fd417c0e61c271ac6e93edc48274917d43f28c557236b09538c9ee9f2be67  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p3_pilot.py
+3f9e8d09ec77b80f341d39707ec4c9c2fb0d10c7ad868ae5f6311579b6f47150  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p3_final.py
+92a4040f37eb19d84473afe59fb0476d9a6172ae4fc9de1d9939fd237186865c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_tuned.json
+82d49354a3321a6c08117416d7a4a9e1718f849ab91c311c114539d54d6e10a4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_n.json
+69b3fc953fd72f56d2652fbff6deb22bcd5b9518b39c73e6de63c2d10ad6cb68  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_tune.json
+63fea9b421ab7ff2421c557d2f3b1d119e15d2d4b01b879a9c92655f660009f3  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_pilot.json
+a57180ddc46d834facea3335237dda4c7a30886dd82544be198795be2593e263  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p3_pilot_analysis.json
+363f7d44ff06e816c5f8a73f38034bc0d9e04c93544242389673eded44af1608  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p1m.py
+ac18e698cbcf6ef248738d4436eabd6af2560582442755e52e9c68cf99568ae4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2.py
+56e039506040868d4cabab17043d295815e13f9b70eaf2ad90a9cd15b75e2059  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/run_p1m.py
+afb19fab5c50ec55900653c1f6c8f7bccf2d392807067840bed965bb092630f7  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/ablation_loo.py
+36224b68b52152c40593321e5c20ac2b3b1676e8c506963b7f663cbe792780d9  /home/claude/evidential_quantum_inspired_ga_dataset/code/run_main_experiment.py

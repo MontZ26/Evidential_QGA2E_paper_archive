@@ -1,0 +1,22 @@
+# P2 etape 2 freeze 2026-11-05T13:52:15Z (protocole v1.5; author authorisation 5 Nov 2026 14:21 and 14:29)
+a2722d161fe6b8773d6e283b98b601e20f4c1d14ca4f406b18f5f6c1142975aa  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/Protocole_P2_etape2_v1_5_candidat.md
+98877321f37916d8db8c0c934ea0d9b0e1b0236cf2a863e6ddf9a4a2ac32f79c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/Regle_reglage_NSGA2_P2s2.md
+7aff31e454e2a9b882d38d4d2ff99b9c8d67ba468ebeee18761dd14e59979a24  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tuned.json
+ac18e698cbcf6ef248738d4436eabd6af2560582442755e52e9c68cf99568ae4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2.py
+6e56ec102049af08ee26968ef4328f4870edb3b1f95b3fd9d2331f53eeb6e9f1  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/run_p2s2.py
+c7fdaa541dc2ee333e086f08b35e325353b0205b019b8aa1e6852f74eb15ce14  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p2s2_final.py
+bf27a32aa4462f52b53a168f69d5940e1a470504335a983aa5c08ef60c9aef60  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p2s2_tune.py
+50ee3ff9238db5354c23f8387642844076c2634b3c232ebda9a228ade30e2e14  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/an_p2s2_pilot.py
+14882e2baa2c10e947736b414b15ae724a77f4f01c111caf08eed35a98d324cd  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tests.py
+d269c2254f11ce92a5deb8fca809a94a4e67c06ed8fac39570788b866f4b3f9e  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tests_finalcode.py
+ac8fb2c565ae51b5290295d91b918e19cf0ac996ed8ca372253dedf7f74e5f66  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_final_tests.py
+711a15adb912a40018ed01faf0fab5ae6c90553dbab3999cb23f2771ac7c4c9d  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_verify_ext.py
+363f7d44ff06e816c5f8a73f38034bc0d9e04c93544242389673eded44af1608  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p1m.py
+56e039506040868d4cabab17043d295815e13f9b70eaf2ad90a9cd15b75e2059  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/run_p1m.py
+221a2b1b40a9811ee423d5e48fa65f9e233007341129e5fb65a20b000d982559  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tests.json
+d526a4b0d132ce9fe23a365fe8ba1b38dfda6accff62f1df802aea492ba8ddce  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tests_finalcode.json
+8c3186707d5a2040a600d71100c48ed32d2ea807db127b13a2fdd396fb90afbf  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_tune.json
+0577f0dd8796dd7f07a847539f02bc4f5a2712899fa335e4ab0708e46cf11cbc  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_pilot.json
+74eda3b9bd2ad9b24c7657f5bcf7f204af67079bba56751bcc1cc53045a9941e  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_pilot_analysis.json
+6f16358f88e1a23fcb5a51d8804218b53b6b20567c9babfa85584898f7f5a7e0  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_final_tests.json
+9318da8bee9ab93d469502876765b754c3e169d363a7b53feb794db756671120  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/revision/p2s2_verify_ext.json

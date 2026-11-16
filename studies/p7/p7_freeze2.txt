@@ -1,0 +1,27 @@
+# P7 freeze 2 (pilot): freeze 1 + tuned config + M2 module + runners + analysis 2026-11-08T23:46:09Z
+4af4f7c45dfa817771ae50ce1a2c71c363bb018f7bc10f3a5c896318f7baf71f  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/Protocol_P7_Evidential_QIGA_v0_3_candidate.md
+14adba48e6589c117f9ef3f590f53507c8743a1a32b2e374c3af8648ef7e2b69  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/Amendement_P7_v0_3_decisions_et_autorisation.md
+d728882f932bb17c0632af38cbccd89291e4d63b564d28e6d58e103bc8934b09  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7.py
+ed8141266e182a6911fbe50754505a54b02a4d7622673f6623adaf98b4610cf3  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_run.py
+6fb3695c3d7cb09dfbb7ee46dad783ffdff6b15332208bd34ac714a4b492db38  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_g0.py
+bd7d7e54805925f93cd324e9f345309b7349d310d387d2767888bebf5eb7aa08  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_g1.py
+792fcbe839d576b9321132a2a93e45f760e6c741eb2efb43ba0c97dcba31e0f0  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_tests.py
+e778f61fd5fb10fa0ced1bbdbcdeb515837fe86b3d1e5226dc6e42207d76158d  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/p7_g0_results.json
+5ea834771bdd157dd689700fb6852ec7534eb4fe797f86f04827f85ff4af7691  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/p7_g1_results.json
+58c6a756f0717d6c5c3eb21246e78d96ca0f0fa419c4b4e8f879dcbc1b80bab6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/p7_tests_engine.json
+204abb901f2f3502c8dd401c665aa82ea3579e0b23a35a80a6949cb97fb17018  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p6/code/p6_stats.py
+76c922e7a18e221418438e8ad98cd110094014d9acceb741a130822476e591e6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p5.py
+363f7d44ff06e816c5f8a73f38034bc0d9e04c93544242389673eded44af1608  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p1m.py
+ac18e698cbcf6ef248738d4436eabd6af2560582442755e52e9c68cf99568ae4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p2s2.py
+b242456d259982dac77719413f5d84be52ca8f9fc51258397a7741f1174a8b89  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p3.py
+3adafaedcdaa5302a87458d0710326e6c23845f1807ceccc50ad111824eea566  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p4.py
+d550341240e6ae938ab0def8c53fb6dcf9a682c01b07f5903e773dc29fe8d3d8  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/run_p1m.py
+6e4292426249fa1d61d00737c876df405d42aa89656049dba0bf4c0e390b3a67  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p5_tuned.json
+99e2444eddf7648cb11e7c577f1467cf29b2ebea7c17248bccf0696cdba17261  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p4_tuned.json
+92a4040f37eb19d84473afe59fb0476d9a6172ae4fc9de1d9939fd237186865c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/../p5/p3_tuned.json
+af237295adbaf71c96ffe11f5c920a6b32481775c0dff063988d25ca39099816  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/p7_tuned.json
+d55727d1f8572078b10805626e8c4b0f03a151f69723d575b337cf81ca53536c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7m2.py
+6bbeaadee4faf92452dfba33eccfa3f75ca2c040700889601af6c86ef95ee1a9  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7m2_tests.py
+449495a72d3715d5d61bde0609d688ca111dda8e89da465f3f44de8a21c86ecb  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/p7_tests_m2.json
+b8860977e393b6d349c6ad0ca417e012cb67aca981fd782964483607901e6e61  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_run2.py
+9cf13dc286dbd0efaa09d716fcfd24e241110a33097cb889df0e77fb76b8fed4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p7/code/p7_an.py

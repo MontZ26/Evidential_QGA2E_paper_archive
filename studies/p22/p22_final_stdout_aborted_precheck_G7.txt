@@ -1,0 +1,9 @@
+PRECHECK ['G7 calib mentions hv']
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_an.py", line 49, in <module>
+    elif m == "final": final(sys.argv[2], sys.argv[3], sys.argv[4])
+                       ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p22/code/p22_an.py", line 27, in final
+    assert not os.path.exists(out), "RUN ONCE"; assert precheck(d, freeze); res = load_dir(d); seeds = SEEDS; n = len(seeds)
+                                                       ~~~~~~~~^^^^^^^^^^^
+AssertionError

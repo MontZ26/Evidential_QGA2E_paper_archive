@@ -1,0 +1,21 @@
+PASS AG5_seed_allowlist
+PASS AG4a_600_P17_shards_exist
+PASS AG4b_P17_budget_6040_and_hv_recomputes_from_stored_front
+PASS AG4c_same_oracle_and_hv_definition
+PASS BG0_P14_and_P20_reference_shards_exist
+PASS AG1_NSGA2_MOEAD_bit_for_bit_equal_P14_stored
+PASS AG2_budget_NSGA2_6040_MOEAD_6030_archive_nonempty
+PASS AG3a_counter_patch_restored
+PASS AG3b_reproducible
+PASS AG3c_no_oracle_in_search
+PASS BG2a_make_target_equals_reference_power_then_floor_gamma_0.8_to_1.25
+PASS BG2b_Eg_and_Dg_same_function_make_target
+PASS BG1_gamma1_bit_for_bit_equals_stored_E
+PASS BG3a_budget_6040
+PASS BG3b_target_patch_restored
+PASS BG3c_reproducible
+PASS BG3d_no_oracle_in_search
+   q_max (info, not a gate) [0.7344819167883192, 0.8413048893443265, 0.805527634970661, 0.8502535096669741]
+PASS BG4_finite_values
+PASS BG5_Eg1.5_Eg2_non_regression_bit_for_bit_vs_P20_stored
+ALL True

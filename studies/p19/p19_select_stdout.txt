@@ -1,0 +1,20 @@
+{
+ "gamma_m": 1.5,
+ "J": {
+  "1.0": 0.45381334028094045,
+  "1.25": 0.04493777099404812,
+  "1.5": 0.03808899863742504,
+  "2.0": 0.6387955550102318,
+  "3.0": 3.1997843517822937,
+  "4.0": 4.5320321443027884,
+  "6.0": 7.468689747482612
+ },
+ "gate_passing": [
+  "1.0",
+  "1.25",
+  "1.5"
+ ],
+ "gate_satisfied": true,
+ "rule": "J(g)=((H-Hcible)/Hcible)^2+((qmax-qmax_cible)/0.05)^2 ; argmin J among gate-passing grid values, else over the whole grid; ties -> smaller gamma; table from p19_calib.json (HV not read)",
+ "note": "the field gamma_m of p19_calib.json (relative-entropy-only rule) is superseded by this amendment"
+}

@@ -1,0 +1,15 @@
+{
+ "T2_w_sigma_only_via_params_DA0_equals_E": true,
+ "T3_targets_normalised_finite_masked": true,
+ "T4_budget_6040": true,
+ "T5_no_oracle_leak": true,
+ "T6_reproducible": true,
+ "T9_logging_inert_bitwise": true,
+ "T9b_fq_counts_consistent": true,
+ "T1_reproduces_stored_P23_bitwise_E_DA1_Dg6": true,
+ "T7_frozen_code_P18_P23_unchanged": true,
+ "T8_calib_script_no_hv": true,
+ "T8b_no_hv_keys_when_oracle_off": true,
+ "T10_new_seeds_unused_elsewhere": true,
+ "T11_edge_cases": true
+}

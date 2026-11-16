@@ -1,0 +1,60 @@
+{
+ "Dg_target": {
+  "entropy": 0.7724045933601542,
+  "qmax": 0.7329712435760414
+ },
+ "table": {
+  "1.0": {
+   "entropy": 0.8328616760123764,
+   "qmax": 0.6995165372646024,
+   "rel_entropy_gap": 0.07827126246002583,
+   "abs_qmax_gap": 0.033454706311438986,
+   "gate": true
+  },
+  "1.25": {
+   "entropy": 0.7837012430531352,
+   "qmax": 0.7223972339812967,
+   "rel_entropy_gap": 0.0146253010275841,
+   "abs_qmax_gap": 0.010574009594744638,
+   "gate": true
+  },
+  "1.5": {
+   "entropy": 0.7396680031204945,
+   "qmax": 0.742496565826334,
+   "rel_entropy_gap": 0.04238269751510318,
+   "abs_qmax_gap": 0.009525322250292678,
+   "gate": true
+  },
+  "2.0": {
+   "entropy": 0.6695772541727595,
+   "qmax": 0.7723753344921189,
+   "rel_entropy_gap": 0.13312626578263853,
+   "abs_qmax_gap": 0.03940409091607755,
+   "gate": false
+  },
+  "3.0": {
+   "entropy": 0.561381471257506,
+   "qmax": 0.821361635652168,
+   "rel_entropy_gap": 0.2732028316722516,
+   "abs_qmax_gap": 0.08839039207612664,
+   "gate": false
+  },
+  "4.0": {
+   "entropy": 0.5211547644379646,
+   "qmax": 0.8381642011409546,
+   "rel_entropy_gap": 0.3252826706133241,
+   "abs_qmax_gap": 0.1051929575649132,
+   "gate": false
+  },
+  "6.0": {
+   "entropy": 0.4556115604530584,
+   "qmax": 0.8680682085315131,
+   "rel_entropy_gap": 0.41013872215462427,
+   "abs_qmax_gap": 0.13509696495547174,
+   "gate": false
+  }
+ },
+ "gamma_m": 1.25,
+ "gate_satisfied": true,
+ "rule": "gamma_m = argmin relative entropy gap to Dg(6) among grid values passing the gate (rel entropy gap <= 0.10 and |qmax gap| <= 0.05); if none passes, argmin over the whole grid (declared best attempt). Means over generations with diagnostics, runs SC3 x 11700-11714. HV not read."
+}

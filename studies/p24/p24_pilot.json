@@ -1,0 +1,8 @@
+{
+ "n_tasks": 20,
+ "n_arms": 20,
+ "wall_total_s": 524.3804123401642,
+ "mean_task_wall_s": 49.67479108572006,
+ "est_main_hours_2procs": 4.1395659238100055,
+ "problems": []
+}

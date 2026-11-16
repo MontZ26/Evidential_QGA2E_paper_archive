@@ -1,0 +1,20 @@
+{
+ "T1_lambda0_equals_E_target_bitwise": true,
+ "T3_q_sums_finite_nonneg_masked": true,
+ "T4_mTheta_nondecreasing_in_lambda": true,
+ "T5a_permutation_invariance": true,
+ "T5b_duplication_invariance_lambda1": true,
+ "T6_edge_cases": true,
+ "T11a_rho0_E_binary_rho_DA_mix_limits": true,
+ "T11b_cautious_closed_form": true,
+ "T7_budget_6040_all_arms": true,
+ "T9_reproducible": true,
+ "T13_logging_inert": true,
+ "T8_no_oracle_leak_search_independent_of_oracle_world": true,
+ "T8b_oracle_recomputed_from_archive": true,
+ "T2a_E_reproduces_stored_P17": true,
+ "T2b_DA_lambda1_reproduces_stored_P17": true,
+ "T10_frozen_code_unchanged_hash_check": true,
+ "T12a_calib_script_no_hv": true,
+ "T12b_no_hv_keys_when_oracle_off": true
+}

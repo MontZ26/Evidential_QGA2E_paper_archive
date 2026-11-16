@@ -1,0 +1,8 @@
+# P15 pilot freeze 2026-11-10T23:38:26Z
+6936bc0d3aafc23138afc41d30a4664b12cfc29a4bd01eebdc0d0750fdc14713  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/Protocole_P15_pilote_DA-DST_v0_1.md
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_params.json
+94079fcf69fbbfd6a82454b8e429121b4f3718060641bdd2e80737f37d805834  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_tests_results.json
+d9abc21331b720a3b30d2989d92401bd6e6878d5adad8f52ca1da1f040dc311b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/code/p15.py
+e49b2c9cd68f5f048e4b8abef9967d3dc2d07b9f9e24ee1ab28bfc961076a152  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/code/p15_run.py
+29284cf2778770e21275d7b0b3a29489972402abcf89714041fdde441f15cfef  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/code/p15_an.py
+f8239c65786072a09e6656dae182aa79dfd7e1e6c526e15d6a0ee4ece30a72a9  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/code/p15_tests.py

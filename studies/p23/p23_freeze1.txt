@@ -1,0 +1,15 @@
+# P23 freeze 2026-11-14T18:24:13Z
+afa1cfeba6bdace6c862aa5df60b1cd4a3c8c8a87288da83956bed4e033640ed  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/Protocole_P23_v1_0.md
+0a7d4322c3c0d269c6f20d3a64747695f3dcd3377e32eec851802701e9cf1a8c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/p23_calib.json
+90335e6bfef774ad449cd5817c02024d1d76d49f84cb65df7c3b2916698da953  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/p23_params.json
+06de7f4f95103a96f61bd1a64688d945b36a7de62c483837a35aa56628fc6917  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/p23_tests_results.json
+dc543c500cba5583c954e8a0ddcf139c30e6d0de62f5e88f8013d1ff9cc6eb26  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/p23_seedcheck.json
+0400eeb6198e4f755665b1c8b2c0379f75f4e2c99f186faddff2786e86e0bfd6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/p23_pilot.json
+2691d428788da051f8b3710802fba2ea059257518a49d78dd2d3b5e7ad78a5ef  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23.py
+5290734e506484ad863450ff1482f2af5ed4da14d0b42547cdb05ed6a5562076  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_calib.py
+06b3c34c358b3654fdadcf494cdd0388914d9554125410cd257fff33e71e9ae2  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_select.py
+bb1123fde81ef6dbd9f3b4fb862ffac5551462d6177dd909ff899dd7e0fe1d53  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_pilot.py
+d676bde93b8cb8589c6a8d0f33d3e89f04ef03940fa26332427b0e85351ac9ae  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_run.py
+bce646960598e336780d93cdc1094f2f88535da1d0c7d35188fc9f7403faf99b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_an.py
+df434c51e66d5478a164e7fb54973b6ea3bf52a4b3467350668ff05cea5c8d49  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p23/code/p23_tests.py
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p15/p15_params.json

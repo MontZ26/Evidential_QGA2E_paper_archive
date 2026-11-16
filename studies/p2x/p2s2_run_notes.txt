@@ -1,0 +1,5 @@
+INTERRUPTION 2026-11-05T14:48:21Z: container restart (uptime 0 min) killed the run after 6/600 jobs; resuming from p2s2_conf.json with the unchanged frozen files (deterministic jobs, no re-run of completed jobs).
+INTERRUPTION 2026-11-05T15:00:56Z: background process killed after 12/600 jobs; switching to foreground chunks of ~580 s with resume (frozen files unchanged).
+TRUNCATION 2026-11-05T16:49:30Z: chunk timeout interrupted a non-atomic json write; complete jobs salvaged with salvage_conf.py (no job content altered); the runner is unchanged.
+TRUNCATION 2026-11-05T17:27:17Z: salvaged
+LOSS 2026-11-05: a chunk kill during the runner's non-atomic json write destroyed ~80 completed jobs; recovered 265 complete jobs from two truncated copies (identical on overlap: 48 same, 0 different); missing jobs are recomputed by the runner (deterministic). Chunks now end only right after a completed write.

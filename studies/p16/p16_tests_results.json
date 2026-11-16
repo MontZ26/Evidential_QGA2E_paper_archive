@@ -1,0 +1,19 @@
+{
+ "1_DA_without_DEC_equals_P15_DA_bit_for_bit": true,
+ "13_DA_arm_has_no_DEC_object_no_level": true,
+ "2a_fixed_S_via_controller_equals_direct_DEC_S": true,
+ "12_initial_cleaning_at_level_S": true,
+ "4_parameters_constant_within_each_generation": true,
+ "2b_fixed_L_applied_from_generation_1_on": true,
+ "9_traceability_level_nmax_rho_every_generation": true,
+ "3_budget_exact_6040_DEC_arms": true,
+ "11_DEC_counters_cumulative_monotone_and_recorded": true,
+ "5a_decide_synthetic": true,
+ "5b_R1_R2_R1inv_SCH_select_expected_level_live_and_budget": true,
+ "8_calendar_reproducible_L_then_S": true,
+ "6_dm_computed_on_identical_sources_DA_and_E_same_generation": true,
+ "10_dm_nonnegative_on_identical_sources_and_in_runs": true,
+ "7a_analysis_script_has_no_HV_field_names": true,
+ "7b_no_oracle_in_search_DA+L": true,
+ "14_raw_initial_population_deterministic_same_for_all_arms": true
+}

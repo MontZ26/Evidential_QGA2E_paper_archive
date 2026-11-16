@@ -1,0 +1,23 @@
+# P6 freeze 2 (pilot): freeze 1 + tuned configs + analysis scripts 2026-11-08T21:45:46Z
+ef5733c50212383d0d120f9599432589ee72d3c95c2e9e03069bd03859f0bb64  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/Protocol_P6_Interaction_v2_6_candidate.md
+f8a5a265874619b8cd31fe4bbdbc1c7b61e302691519a0c4a5b63296563285a8  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6.py
+d2472031021e213b9f25ab091490e3d6ba12c783b053e02313b8deb0eb58f3d4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_run.py
+204abb901f2f3502c8dd401c665aa82ea3579e0b23a35a80a6949cb97fb17018  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_stats.py
+08840f2d2bf2e9aeccdb22593b9d0672631f6ac0a2210c79cdba008b2cd1910b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_tests.py
+71bf90eff6f2394cca42791f8f34007c0f341aab841c5c6939338502745a32a4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_synth_test.py
+76c922e7a18e221418438e8ad98cd110094014d9acceb741a130822476e591e6  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p5.py
+363f7d44ff06e816c5f8a73f38034bc0d9e04c93544242389673eded44af1608  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p1m.py
+ac18e698cbcf6ef248738d4436eabd6af2560582442755e52e9c68cf99568ae4  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p2s2.py
+b242456d259982dac77719413f5d84be52ca8f9fc51258397a7741f1174a8b89  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p3.py
+3adafaedcdaa5302a87458d0710326e6c23845f1807ceccc50ad111824eea566  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p4.py
+d550341240e6ae938ab0def8c53fb6dcf9a682c01b07f5903e773dc29fe8d3d8  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/run_p1m.py
+6e4292426249fa1d61d00737c876df405d42aa89656049dba0bf4c0e390b3a67  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p5_tuned.json
+99e2444eddf7648cb11e7c577f1467cf29b2ebea7c17248bccf0696cdba17261  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p4_tuned.json
+92a4040f37eb19d84473afe59fb0476d9a6172ae4fc9de1d9939fd237186865c  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/../p5/p3_tuned.json
+22eaecb80f4d34d198e203545122f3e775f7e9b26c74964420105410869d2278  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/p6_tuned.json
+143a9335da2f04615ec68dcf7229b9f0dee354f5c00dcdd81cd57f3e9594dd81  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_load.py
+b68064bdac8a17434eb25d0b7d5809f93f1f9daa5d020b7654342668a07f9d88  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_pilot.py
+77ffe8c36c5d399a3e25263fcd4d9f0d0e86b1a1e265b66189ee16253620bc1b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_final.py
+3118c4b754695b20d2044c8d0598770b068aac7754e92390b507645517aae8b2  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/code/p6_precheck.py
+08e46dedf7286a229855a4fdec071f015797b6f24e2e1ed3b16b75bed556c1dd  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/p6_tests_engine.json
+ca73bd9672361090a36cb31626d0e57e3667ea0833176ee648ca5affca21645f  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p6/p6_tests_stats.json

@@ -1,0 +1,3 @@
+# P10 — règle de calibration de w (écrite AVANT toute exécution de calibration ; 10 nov. 2026)
+Autorisation : Dr Montassar Zaghdoud, 01:40 (D10-5). Paramètre calibré : w (masse de soutien d'une source, partagé entre V0c-Q et V1-Q) ; ε = 0,02 et le pas de rotation δ = 0,05π sont fixés (P7 / P3) ; DEC : paramètres de P11 inchangés, non calibrés.
+Grille w ∈ {0,3 ; 0,5 ; 0,7 ; 0,9} ; SC3 × graines 9300–9314 ; bras E et P (V1-Q et V0c-Q dans leurs mondes respectifs). Critère NEUTRE vis-à-vis du contraste primaire : HV oracle moyen de E et P ((HV_E + HV_P)/2, moyenne sur graines et SC3). On retient le w maximisant ce critère ; égalité (< 1e-4) → le plus petit w. Aucun HV de P10 confirmatoire n'est utilisé ; le choix est gelé au gel P10.

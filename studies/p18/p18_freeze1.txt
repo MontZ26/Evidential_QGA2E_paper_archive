@@ -1,0 +1,9 @@
+# P18 freeze 2026-11-11T11:43:53Z
+12af4eb57fb7189234a40ce9cbd6c4a91a83938d130b5dcd0a52ce000b97f3fa  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/Protocole_P18_v0_1.md
+9611c4bb6aca57b4d8259ac17e4b1bb23a4032a8a1dda4bc3ed6fd1b0b009a55  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/p18_tests_results.json
+853fc12946dd8c11fa45881413d06e599f71e76bace9e0c5a37b42a6e6c4a102  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/code/p18.py
+83a7e205a6ae0bfbe908b923291d3ae42f264ca1afd016e4b2d1b2f6250cb528  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/code/p18_run.py
+b9c564ef23fdf0752c8a0b7aa3e5215dcacf4a5cddaa15d60860cf0899ce9e0f  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/code/p18_an.py
+2632d0895404ab347bc92cc7babc0460f69d87d71dcdd009cf6520a6b2f31b72  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/code/p18_tests.py
+74e8b9c8d31b5364971407be8c22dea7b1c8b59062eb682938d02cdbf24fb287  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/../p16/p16_thresholds.json
+d5fe40f611df1d0b05113a49e2048bcccbe9eedd23e279324f081505cdd41e7b  /tmp/claude-0/-home-claude/98ab71eb-5e16-56eb-b7da-e2e37d41cb81/scratchpad/p18/../p15/p15_params.json

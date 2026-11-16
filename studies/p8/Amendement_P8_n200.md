@@ -1,0 +1,2 @@
+# Amendement P8 — n = 200
+Instruction de l'auteur, 2026-11-09 08:34 (Africa/Tunis, UTC+01:00) : « n=200 ». Le dimensionnement (pilote 8150–8179) donnait n requis = 100 pour les trois contrastes. L'auteur fixe n = 200 (D8-9). Les graines confirmatoires deviennent 8200–8399 (déjà réservées au §9). Les 100 premières (8200–8299), en cours d'exécution au moment de l'instruction, n'ont été ni lues ni analysées ; aucun résultat confirmatoire n'a été vu. Aucune autre modification. `p8_n.json` mis à jour (n=200), nouveau fichier de gel p8_freeze3.txt.

@@ -1,0 +1,10 @@
+{
+ "T5": true,
+ "T6": true,
+ "T1_archive_patch_K_run": true,
+ "T1b_archive_patch_run7": true,
+ "T2_oracle_swap_exact": true,
+ "T3_budget_6040_8arms_feasible": true,
+ "T4_no_oracle_leak": true,
+ "all_ok": true
+}
