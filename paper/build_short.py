@@ -106,14 +106,14 @@ In QGA2-E for home health care team assignment, an evidential target built with 
 out+=blk('# References').rstrip()+'\n\n'
 out+='''# Appendix A. Declared incidents and deviations (summary)
 
-Each study followed the same fixed order; no run was repeated to improve a result and no hypothesis, margin or rule was changed after results were read. The technical incidents are declared in full in the Supplementary Material (Appendix A).
+No run was repeated to improve a result and no hypothesis, margin or rule was changed after results were read; the incidents are declared in the Supplementary Material (Appendix A).
 
 '''
 gl="""# Appendix B. Glossary of abbreviations
 
 **Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: classical multiobjective GAs (non-dominated sorting with crowding; decomposition).
 
-**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule on simple supports, then the pignistic probability BetP). DA(λ): E with source discounting by similarity (λ = 0 is E; λ = 1 is DA; similarity threshold σ = 0.7). Dg(γ): Dp sharpened by the power γ (γ = 6 unless stated). Eg(γ): E sharpened or softened by γ.;
+**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).;
 
 """
 out+=gl
