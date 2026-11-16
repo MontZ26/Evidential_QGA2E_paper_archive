@@ -233,7 +233,7 @@ Two later studies (n = 100, seeds 12000–12099, not independent) varied the dep
 
 ## 6.6 Independent evaluations on new families of instances
 
-All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 (Uchoa et al. 2017), Christofides M-n101-k10 (Christofides et al. 1979), Golden_1 (1998), Li_21 (2005), ORTEC-n242-k12 and Homberger C1_2_1 (Gehring and Homberger 1999)) from the test data of VRPLIB (Lan n.d.), with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
+All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 (Uchoa et al. 2017), Christofides M-n101-k10 (Christofides et al. 1979), Golden_1 (1998), Li_21 (2005), ORTEC-n242-k12 and Homberger C1_2_1 (Gehring and Homberger 1999)) from the test data of VRPLIB (Lan 2023), with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
 
 **Table 2.** Independent evaluation (60 seeds, six new scenarios; paired differences in oracle hypervolume, 99% intervals, margin 0.005).
 
@@ -363,7 +363,7 @@ Kim Y., Kim J.-H., Han K.-H. Quantum-inspired multiobjective evolutionary algori
 
 Lakens D. Equivalence tests: a practical primer for t tests, correlations, and meta-analyses. *Social Psychological and Personality Science* 8(4) (2017) 355–362. https://doi.org/10.1177/1948550617697177.
 
-Lan L. VRPLIB: a Python package for working with routing problem instances (software and test data, MIT licence), https://github.com/PyVRP/VRPLIB, commit 309f1890 (distributed copy of the benchmark files used in Section 6.6).
+Lan L. VRPLIB: a Python package for working with routing problem instances (software and test data, MIT licence), 2023, https://github.com/PyVRP/VRPLIB, commit 309f1890 (distributed copy of the benchmark files used in Section 6.6).
 
 Larrañaga P., Lozano J.A. *Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation*. Kluwer Academic Publishers, Boston, 2002. ISBN 978-0-7923-7466-4.
 
