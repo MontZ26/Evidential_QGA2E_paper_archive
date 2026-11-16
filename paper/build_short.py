@@ -113,7 +113,7 @@ gl="""# Appendix B. Glossary of abbreviations
 
 **Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: classical multiobjective GAs (non-dominated sorting with crowding; decomposition).
 
-**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).;
+**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).
 
 """
 out+=gl
