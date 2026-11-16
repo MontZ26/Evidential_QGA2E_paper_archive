@@ -1,5 +1,5 @@
 import re
-s=open('Paper_v0_9.md').read()
+s=open('Paper_v0_9_num.md').read()
 parts=re.split(r'(?m)^(?=#{1,2} )',s)
 B={}
 for p in parts: B[p.split('\n')[0]]=p
@@ -131,7 +131,7 @@ for a,c in [('## 2.2 ','## 2.1 '),('## 2.3 ','## 2.2 '),('## 2.4 ','## 2.3 '),('
     assert a in out,a; out=out.replace(a,c)
 out=out.replace('**Table 6.**','**Table 2.**').replace('**Table 7.**','**Table 3.**').replace('**Table 8.**','**Table 4.**').replace('(Table 1) and the detail','(Table 1) and the detail')
 
-full=open('Paper_v0_9.md').read()
+full=open('Paper_v0_9_num.md').read()
 i=full.index('**Table 1.**'); j=full.index('## 6.2 Classical algorithms'); t1=full[i:j].rstrip()+'\n\n'
 t1=t1.replace('Abbreviations are defined in Appendix D.','Abbreviations are defined in Appendix B.').replace('Other abbreviations: Appendix D.','Other abbreviations: Appendix B.')
 assert '## 6.1 Classical algorithms against QGA2-E' in out
@@ -161,4 +161,4 @@ out=out.replace('weight of evidence;\n','weight of evidence.\n')
 import re as _r2
 _m=_r2.search(r"(?m)^\*\*Instances\.\*\* Six scenarios[^\n]*$",out); assert _m
 out=out.replace(_m.group(0),_m.group(0)+" Public home-care benchmark sets exist [29] but contain no observed affinities or evidence sources, which is why the evidence is simulated here.",1)
-open('Paper_v0_9_short.md','w').write(out); print(len(out.split()))
+open('Paper_v0_9_short_num.md','w').write(out); print(len(out.split()))

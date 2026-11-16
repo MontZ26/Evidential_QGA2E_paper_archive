@@ -8,7 +8,7 @@ date: "15 November 2026"
 
 Multiobjective team assignment in home health care must cope with uncertain affinities between patients and care teams. We ask whether aggregating population information with Dempster–Shafer evidence, rather than with a probabilistic frequency model, improves a quantum-inspired genetic algorithm, which can be read as a univariate model-based search. We report a sequence of studies whose contrasts, equivalence margins and decision rules were fixed before each run, using paired seeds, an oracle hypervolume measure and semi-synthetic instances built on benchmark geographies, with simulated hidden truth and evidence. The evidential target clearly outperformed the simple probabilistic target, but a probabilistic target sharpened by a power transformation did at least as well on the main instances, and sharpening the evidential target further degraded its performance. Refinements of the evidential structure brought no robust gain, and guiding the mutation of a classical algorithm with the same targets did not help. On two new families of instances, the advantage over the simple probabilistic target was reproduced, whereas the ordering against the sharpened target was not stable. A final study gave the probabilistic target a concentration schedule calibrated to follow that of the evidential target: the evidential target was better when the source strength was low and worse when it was high, and the calibration controlled only two concentration diagnostics. Classical multiobjective algorithms remained far better than all variants of the quantum-inspired algorithm. No representation advantage independent of concentration was established.
 
-**Keywords:** home health care; team assignment; multiobjective optimisation; quantum-inspired genetic algorithm; Dempster–Shafer theory; estimation of distribution; hypervolume; pre-registered experiments.
+**Keywords:** home health care; multiobjective optimisation; quantum-inspired genetic algorithm; Dempster–Shafer theory; estimation of distribution algorithms; hypervolume.
 
 # 1. Introduction
 
@@ -24,19 +24,19 @@ We formalise the two targets and their concentration (Section 4) and answer the 
 
 ## 2.1 Quantum-inspired evolutionary algorithms
 
-Han and Kim [6] introduced a quantum-inspired evolutionary algorithm (QIEA) for combinatorial optimisation, where each variable has a Q-bit whose observation yields a binary value, and a rotation gate moves the amplitudes towards the best solution found; a later version added a termination criterion, a different gate and a two-phase scheme [7]. Multiobjective extensions include a QIEA for multiobjective knapsack problems [8] and a framework with convergence conditions [9] (Li and Rudolph, technical report). In these algorithms a probability distribution over decisions is parametrised by angles; the update is a stochastic-approximation step towards a target. The QGA2 of this paper uses two amplitudes per team and a categorical observation (Section 4.1).
+Han and Kim (2002) introduced a quantum-inspired evolutionary algorithm (QIEA) for combinatorial optimisation, where each variable has a Q-bit whose observation yields a binary value, and a rotation gate moves the amplitudes towards the best solution found; a later version added a termination criterion, a different gate and a two-phase scheme (Han and Kim 2004). Multiobjective extensions include a QIEA for multiobjective knapsack problems (Kim et al. 2006) and a framework with convergence conditions (Li and Rudolph 2007). In these algorithms a probability distribution over decisions is parametrised by angles; the update is a stochastic-approximation step towards a target. The QGA2 of this paper uses two amplitudes per team and a categorical observation (Section 4.1).
 
 ## 2.2 Dempster–Shafer theory
 
-Dempster [10] introduced upper and lower probabilities induced by a multivalued mapping and the rule of combination later formalised by Shafer [11]. The transferable belief model of Smets and Kennes [12] separates credal and pignistic levels and defines the pignistic transformation used here to obtain a probability for decisions. Yager's variant [13] transfers the conflicting mass to the whole frame instead of renormalising; it is used for the evidence on team–skill adequacy (Section 3.4). Denœux [14] reviews decision-making with belief functions. Evidence theory has also been used to model epistemic uncertainty in design optimisation and reliability analysis [36–38] and, through the evidential reasoning approach, for multiple-attribute decision analysis [39, 40]; these works concern the evaluation of solutions or the ranking of alternatives. Their positioning relative to target aggregation in model-based search is summarised in Section 2.4.
+Dempster (1967) introduced upper and lower probabilities induced by a multivalued mapping and the rule of combination later formalised by Shafer (1976). The transferable belief model of Smets and Kennes (1994) separates credal and pignistic levels and defines the pignistic transformation used here to obtain a probability for decisions. Yager's variant (1987) transfers the conflicting mass to the whole frame instead of renormalising; it is used for the evidence on team–skill adequacy (Section 3.4). Denœux (2019) reviews decision-making with belief functions. Evidence theory has also been used to model epistemic uncertainty in design optimisation and reliability analysis (Agarwal et al. 2004; Mourelatos and Zhou 2006; Zhang and Jiang 2021) and, through the evidential reasoning approach, for multiple-attribute decision analysis (Wang et al. 2006; Yang and Xu 2002); these works concern the evaluation of solutions or the ranking of alternatives. Their positioning relative to target aggregation in model-based search is summarised in Section 2.4.
 
 ## 2.3 Estimation of distribution algorithms and concentration
 
-Estimation-of-distribution algorithms (EDAs) replace crossover and mutation by sampling from a probabilistic model estimated from selected individuals; Baluja's PBIL [15] keeps a probability vector updated towards the best individuals, and Hauschild and Pelikan [16] survey the field (see also the book of Larrañaga and Lozano [41]). A recurrent theme is the loss of diversity: Shapiro [17] shows that the finite sampling and selection of EDAs produce drift that drives the model to a degenerate distribution, with consequences for scalability. The *concentration* of the sampling distribution (its entropy or its maximum probability) is therefore a central control parameter of such algorithms. In Section 4.3 we show that the power transformation used to sharpen targets is a tempering whose inverse temperature is the exponent, which puts concentration on an explicit one-parameter scale. QGA2-E belongs to this family: it keeps a separate distribution for each patient (a univariate model) and moves it towards a target built from the non-dominated individuals, so the way the target is built, and how concentrated it becomes over time, is the part of the algorithm that decides how fast the model degenerates.
+Estimation-of-distribution algorithms (EDAs) replace crossover and mutation by sampling from a probabilistic model estimated from selected individuals; Baluja's PBIL (Baluja 1994) keeps a probability vector updated towards the best individuals, and Hauschild and Pelikan (2011) survey the field (see also the book of Larrañaga and Lozano (2002)). A recurrent theme is the loss of diversity: Shapiro (2005) shows that the finite sampling and selection of EDAs produce drift that drives the model to a degenerate distribution, with consequences for scalability. The *concentration* of the sampling distribution (its entropy or its maximum probability) is therefore a central control parameter of such algorithms. In Section 4.3 we show that the power transformation used to sharpen targets is a tempering whose inverse temperature is the exponent, which puts concentration on an explicit one-parameter scale. QGA2-E belongs to this family: it keeps a separate distribution for each patient (a univariate model) and moves it towards a target built from the non-dominated individuals, so the way the target is built, and how concentrated it becomes over time, is the part of the algorithm that decides how fast the model degenerates.
 
 ## 2.4 Positioning
 
-The question addressed is whether, when an evidential target outperforms a probabilistic one in a model-based search, the advantage comes from the representation or from the concentration it induces, and, more finely, whether it comes from the representation or from the *schedule* on which the target concentrates (Dempster's rule sharpens adaptively as agreement grows; a power transformation of a frequency model sharpens by a fixed amount). We study this in a univariate model-based search (an EDA-like algorithm), on a stylised home-care assignment problem with simulated information, with a design that sharpens both targets by the same operation, matches concentration where possible, and reports pre-registered contrasts, including inconclusive and negative ones. The contribution is a controlled comparison and a documented set of negative results about when the evidential representation does not help, not a new competitive algorithm. In the literature reviewed in Sections 2.1–2.3, belief functions in optimisation address uncertain objective evaluations or post-optimisation decision analysis [36–40], whereas estimation-of-distribution and quantum-inspired algorithms update their sampling models from probabilistic frequencies or amplitude vectors [6–9, 15–17, 41]. Within the scope of this targeted review, the present study provides a controlled comparison, with pre-specified decision rules, of evidential versus probabilistic target aggregation inside a univariate model-based search after matching concentration and annealing schedules.
+The question addressed is whether, when an evidential target outperforms a probabilistic one in a model-based search, the advantage comes from the representation or from the concentration it induces, and, more finely, whether it comes from the representation or from the *schedule* on which the target concentrates (Dempster's rule sharpens adaptively as agreement grows; a power transformation of a frequency model sharpens by a fixed amount). We study this in a univariate model-based search (an EDA-like algorithm), on a stylised home-care assignment problem with simulated information, with a design that sharpens both targets by the same operation, matches concentration where possible, and reports pre-registered contrasts, including inconclusive and negative ones. The contribution is a controlled comparison and a documented set of negative results about when the evidential representation does not help, not a new competitive algorithm. In the literature reviewed in Sections 2.1–2.3, belief functions in optimisation address uncertain objective evaluations or post-optimisation decision analysis (Agarwal et al. 2004; Mourelatos and Zhou 2006; Wang et al. 2006; Yang and Xu 2002; Zhang and Jiang 2021), whereas estimation-of-distribution and quantum-inspired algorithms update their sampling models from probabilistic frequencies or amplitude vectors (Baluja 1994; Han and Kim 2002; Han and Kim 2004; Hauschild and Pelikan 2011; Kim et al. 2006; Larrañaga and Lozano 2002; Li and Rudolph 2007; Shapiro 2005). Within the scope of this targeted review, the present study provides a controlled comparison, with pre-specified decision rules, of evidential versus probabilistic target aggregation inside a univariate model-based search after matching concentration and annealing schedules.
 
 # 3. Problem, instances and information model
 
@@ -74,7 +74,7 @@ computed exactly. For a run, let $\mathcal X$ be the archive of all solutions ev
 
 ## 3.4 Instances and information model
 
-**Instances.** Six scenarios derive from the Solomon benchmark [28]: S4 (30 patients, 8 teams) and S5 (50 patients, 10 teams) crossed with the topologies RC101, R101 and C101. Only the customer coordinates come from the Solomon instance (the depot and the first 30 or 50 customers); for each scenario and seed an instance is generated: time windows, certification matrix $C$ (with a repair step: if some patient cannot be served by any team, team 0 is given all the skills that patient requires, with random skill levels, so that every instance is feasible; team 0 is otherwise an ordinary team, but the repair raises its coverage and can shape assignment patterns in the instances where it is triggered), and hidden truth. Public home-care benchmark sets exist [29] but contain no observed affinities or evidence sources, which is why the evidence is simulated here.
+**Instances.** Six scenarios derive from the Solomon benchmark (Solomon 1987): S4 (30 patients, 8 teams) and S5 (50 patients, 10 teams) crossed with the topologies RC101, R101 and C101. Only the customer coordinates come from the Solomon instance (the depot and the first 30 or 50 customers); for each scenario and seed an instance is generated: time windows, certification matrix $C$ (with a repair step: if some patient cannot be served by any team, team 0 is given all the skills that patient requires, with random skill levels, so that every instance is feasible; team 0 is otherwise an ordinary team, but the repair raises its coverage and can shape assignment patterns in the instances where it is triggered), and hidden truth. Public home-care benchmark sets exist (Mankowska et al. 2014) but contain no observed affinities or evidence sources, which is why the evidence is simulated here.
 
 **Hidden truth** (as generated). A fraction 25% of certified cells is flagged *unverified*, and 35% of those are in truth not competent (hidden failure, $C^{\mathrm{true}}_{tk}=0$). Let $Q_{tk}=\text{level}_{tk}/2$ for a skill level in $\{0,1,2\}$ and $E_{tk}=\mathrm{clip}(0.15+0.6Q_{tk}+\epsilon,0,1)$ with $\epsilon\sim\mathcal N(0,0.15^2)$. The true adequacy is $A^\ast_{tk}=C^{\mathrm{true}}_{tk}(0.6Q_{tk}+0.4E_{tk})$ and the true satisfaction is $S^\ast_{tg}=\mathrm{clip}(0.35+0.45\bar A_{tg}+\eta,\,0.02,\,0.98)$ with $\eta\sim\mathcal N(0,0.10^2)$ and $\bar A_{tg}$ the mean true adequacy over the certified cells of group $g$. (The constants were checked against the generator code.)
 
@@ -154,7 +154,7 @@ With $\varepsilon=0.02$ and $K=4$ the plateau is $0.94$ (Figure 3a). The exponen
 
 ## 4.4 Baselines and other variants
 
-NSGA-II [26] and MOEA/D [27] are run on the same instances, seeds, decoder and budget, with an archive of every evaluated solution re-evaluated in the oracle world as for QGA2-E. Guided mutation in NSGA-II draws the new team of a mutated gene (probability $1/n_p$) from the target $q$ restricted to the other allowed teams; with $q$ uniform it is bit-for-bit NSGA-II.
+NSGA-II (Deb et al. 2002) and MOEA/D (Zhang and Li 2007) are run on the same instances, seeds, decoder and budget, with an archive of every evaluated solution re-evaluated in the oracle world as for QGA2-E. Guided mutation in NSGA-II draws the new team of a mutated gene (probability $1/n_p$) from the target $q$ restricted to the other allowed teams; with $q$ uniform it is bit-for-bit NSGA-II.
 
 # 5. Experimental design and decision rules
 
@@ -184,7 +184,7 @@ Each study uses seeds not used by calibration or technical tests. Main ranges: 1
 
 # 6. Results
 
-All differences are in oracle hypervolume (the mean of the QGA2-E variants is about 0.5, that of NSGA-II about 0.65); intervals are 99% for primary contrasts with the margin 0.005 and 95% for secondary or descriptive ones, and each quoted contrast says which. Question 1 (does the evidential target beat the simple probabilistic target?): Sections 6.2 and 6.6. Question 2 (is concentration the mechanism, or the representation, or the schedule?): Sections 6.3, 6.5 and 6.7. Question 3 (transfer to another algorithm): Section 6.8. Question 4 (does it hold outside the original instances?): Section 6.6. Table 1 gathers the pairwise differences in oracle hypervolume between the 14 methods on the six Solomon-derived scenarios (SC6): bold values are primary pre-registered paired contrasts (99% CI), round brackets secondary paired contrasts (95% CI), and square or curly brackets differences of means (within or across seed ranges) without intervals. The values quoted in Sections 6.1, 6.3 and 6.8 are taken from it or from the paired contrasts it lists; studies on other seed ranges (Sections 6.5 to 6.7) are reported in their own tables and are not in it. The detail of Sections 6.3 to 6.5 is in the Supplementary Material.
+All differences are in oracle hypervolume (the mean of the QGA2-E variants is about 0.5, that of NSGA-II about 0.65); intervals are 99% for primary contrasts with the margin 0.005 and 95% for secondary or descriptive ones, and each quoted contrast says which. Question 1 (does the evidential target beat the simple probabilistic target?): Sections 6.2 and 6.6. Question 2 (is concentration the mechanism, or the representation, or the schedule?): Sections 6.3, 6.5 and 6.7. Question 3 (transfer to another algorithm): Section 6.8. Question 4 (does it hold outside the original instances?): Section 6.6. Table 1 gathers the pairwise differences in oracle hypervolume between the 14 methods on the six Solomon-derived scenarios (SC6): bold values are primary pre-registered paired contrasts (99% CI), round brackets secondary paired contrasts (95% CI), and square or curly brackets differences of means (within or across seed ranges) without intervals. The values quoted in Sections 6.1, 6.3 and 6.8 are taken from it or from the paired contrasts it lists; studies on other seed ranges (Sections 6.5 to 6.7) are reported in their own tables and are not in it. The detail of Sections 6.3 to 6.5 is in the Online Resource 1.
 
 **Table 1.** Mean difference in oracle hypervolume, row minus column (SC6; positive: the row is better; negative: the column is better; near zero: comparable, equivalence margin ±0.005). The matrix is antisymmetric. Style of each value: **bold**, primary pre-registered paired contrast (99% CI); (round brackets), secondary or descriptive paired contrast (95% CI); [square brackets], difference of means within one seed range, without CI; {curly brackets}, difference of means from different seed ranges, an order of magnitude only. The intervals of the paired contrasts are given in the supplementary traceability table. Abbreviations are defined in Appendix B.
 
@@ -223,15 +223,15 @@ Sharpening the evidential target made it worse (n = 100): Eg2 − E = −0.0046 
 
 ## 6.4 Refinements of the evidential structure
 
-Four further ideas were tested, each pre-registered, to see whether the evidential structure could add something beyond a sharper target: a dependence correction (DA), ignorance as a fourth survival objective, adaptive regulation of the dependence cap, and diversity as a fourth objective. None produced a robust gain: the only positive effect (ignorance as a fourth objective, +0.0077) was matched or exceeded by a random fourth objective (−0.0042 for ignorance against the random one), the adaptive regulation was equivalent to the fixed cap in all five contrasts, and diversity as a fourth objective was inferior (−0.0094). The full list of contrasts is in the Supplementary Material (Appendix E).
+Four further ideas were tested, each pre-registered, to see whether the evidential structure could add something beyond a sharper target: a dependence correction (DA), ignorance as a fourth survival objective, adaptive regulation of the dependence cap, and diversity as a fourth objective. None produced a robust gain: the only positive effect (ignorance as a fourth objective, +0.0077) was matched or exceeded by a random fourth objective (−0.0042 for ignorance against the random one), the adaptive regulation was equivalent to the fixed cap in all five contrasts, and diversity as a fourth objective was inferior (−0.0094). The full list of contrasts is in the Online Resource 1 (Appendix E).
 
 ## 6.5 Dependence degree and local sensitivity
 
-Two later studies (n = 100, seeds 12000–12099, not independent) varied the dependence degree λ of the dependence-corrected target DA and then the source strength w, the similarity threshold σ and the exponent, one at a time. The parameter λ changed the concentration of the target markedly (maximum probability at generation 150 from 0.845 for E to 0.709 for λ = 1) without changing hypervolume (DA(1) − E = −0.0009 [−0.0025, +0.0007], equivalence; DA − Dg between −0.0029 and −0.0039 with a conforming match). In the sensitivity study the evidential target kept a large advantage over the simple probabilistic target at every source strength (E − Dp = +0.028 to +0.043), but the sign of DA − Dg depended on the setting: +0.0032 [+0.0010, +0.0052] at w = 0.15 and −0.0039 [−0.0066, −0.0014] at the reference w = 0.3 (both with a conforming match), and unattributable where the match failed (w = 0.5, w = 0.7, σ = 0.6). Post hoc observations are in the Supplementary Material.
+Two later studies (n = 100, seeds 12000–12099, not independent) varied the dependence degree λ of the dependence-corrected target DA and then the source strength w, the similarity threshold σ and the exponent, one at a time. The parameter λ changed the concentration of the target markedly (maximum probability at generation 150 from 0.845 for E to 0.709 for λ = 1) without changing hypervolume (DA(1) − E = −0.0009 [−0.0025, +0.0007], equivalence; DA − Dg between −0.0029 and −0.0039 with a conforming match). In the sensitivity study the evidential target kept a large advantage over the simple probabilistic target at every source strength (E − Dp = +0.028 to +0.043), but the sign of DA − Dg depended on the setting: +0.0032 [+0.0010, +0.0052] at w = 0.15 and −0.0039 [−0.0066, −0.0014] at the reference w = 0.3 (both with a conforming match), and unattributable where the match failed (w = 0.5, w = 0.7, σ = 0.6). Post hoc observations are in the Online Resource 1.
 
 ## 6.6 Independent evaluations on new families of instances
 
-All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 [30], Christofides M-n101-k10 [31], Golden_1 [32], Li_21 [33], ORTEC-n242-k12 and Homberger C1_2_1 [34]) from the test data of VRPLIB [35], with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
+All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 (Uchoa et al. 2017), Christofides M-n101-k10 (Christofides et al. 1979), Golden_1 (1998), Li_21 (2005), ORTEC-n242-k12 and Homberger C1_2_1 (Gehring and Homberger 1999)) from the test data of VRPLIB (Lan n.d.), with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
 
 **Table 2.** Independent evaluation (60 seeds, six new scenarios; paired differences in oracle hypervolume, 99% intervals, margin 0.005).
 
@@ -309,61 +309,113 @@ A transfer study (n = 100, five primary contrasts, 99% CI) guided the mutation o
 
 In QGA2-E for home health care team assignment, an evidential target built with Dempster's rule outperformed a simple probabilistic target, but a power-sharpened probabilistic target performed at least as well on the main instances, further sharpening of the evidential target lowered its performance, and the comparison designed to match concentration was inconclusive. Refinements of the evidential structure gave no robust gain, and guiding NSGA-II with the same targets did not help; NSGA-II and MOEA/D stayed 0.11 to 0.17 hypervolume above all QGA2-E variants. Two independent evaluations reproduced the large advantage over the simple probabilistic target and the equivalence of DA and E at a high source strength, but not a stable ordering against the sharpened target. A final study that gives the probabilistic target the concentration schedule of the evidential target found the evidential target better at w = 0.3 and worse at w = 0.7. No representation advantage independent of concentration was established in the configurations tested, on semi-synthetic instances. Perspectives: designs that manipulate concentration and representation independently with exact distributional matching, other integration points of evidence in classical algorithms, multivariate models, other budgets and instance families, real evidence data, and integrated routing and scheduling.
 
-**Supplementary material.** The extended manuscript (with the full results of Sections 6.3 to 6.5, the post hoc analyses, the full limitations, the declared incidents and the refinement studies), the frozen protocols and code, and the final analysis files are provided as Supplementary Material and archived in release V1.0 of https://github.com/MontZ26/Evidential_QGA2E_paper_archive (permanent link: https://github.com/MontZ26/Evidential_QGA2E_paper_archive/releases/tag/V1.0).
-
-**Use of AI tools.** The author used Claude (Anthropic) to assist with drafting and editing the manuscript text, preparing tables and figures from the analysis files, and checking cross-references and citations. The experimental design, the experiments, the interpretation of the results and the final content were produced and verified by the author, who takes full responsibility for the manuscript.
-
-# References
-
-1. Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. DOI 10.1016/j.cor.2016.07.019.
-2. Cissé M., Yalçındağ S., Kergosien Y., Şahin E., Lenté C., Matta A. OR problems related to Home Health Care: a review of relevant routing and scheduling problems. *Operations Research for Health Care* 13–14 (2017) 1–22. DOI 10.1016/j.orhc.2017.06.001.
-3. Di Mascolo M., Martinez C., Espinouse M.-L. Routing and scheduling in Home Health Care: a literature survey and bibliometric analysis. *Computers & Industrial Engineering* 158 (2021) 107255. DOI 10.1016/j.cie.2021.107255.
-4. Braekers K., Hartl R.F., Parragh S.N., Tricoire F. A bi-objective home care scheduling problem: analyzing the trade-off between costs and client inconvenience. *European Journal of Operational Research* 248(2) (2016) 428–443.
-5. Rasmussen M.S., Justesen T., Dohn A., Larsen J. The home care crew scheduling problem: preference-based visit clustering and temporal dependencies. *European Journal of Operational Research* 219(3) (2012) 598–610.
-6. Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithm for a class of combinatorial optimization. *IEEE Transactions on Evolutionary Computation* 6(6) (2002) 580–593. DOI 10.1109/TEVC.2002.804320.
-7. Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithms with a new termination criterion, Hε gate, and two-phase scheme. *IEEE Transactions on Evolutionary Computation* 8(2) (2004) 156–169. DOI 10.1109/TEVC.2004.823467.
-8. Kim Y., Kim J.-H., Han K.-H. Quantum-inspired multiobjective evolutionary algorithm for multiobjective 0/1 knapsack problems. *Proc. 2006 IEEE Congress on Evolutionary Computation* (2006) 2601–2606. DOI 10.1109/CEC.2006.1688633.
-9. Li Z., Rudolph G. A framework of quantum-inspired multi-objective evolutionary algorithms and its convergence properties. Technical report, TU Dortmund (SFB 531), 2007. DOI 10.17877/DE290R-8713.
-10. Dempster A.P. Upper and lower probabilities induced by a multivalued mapping. *Annals of Mathematical Statistics* 38(2) (1967) 325–339. DOI 10.1214/aoms/1177698950.
-11. Shafer G. *A Mathematical Theory of Evidence*. Princeton University Press, 1976.
-12. Smets P., Kennes R. The transferable belief model. *Artificial Intelligence* 66(2) (1994) 191–234. DOI 10.1016/0004-3702(94)90026-4.
-13. Yager R.R. On the Dempster–Shafer framework and new combination rules. *Information Sciences* 41(2) (1987) 93–137. DOI 10.1016/0020-0255(87)90007-7.
-14. Denœux T. Decision-making with belief functions: a review. *International Journal of Approximate Reasoning* 109 (2019) 87–110. DOI 10.1016/j.ijar.2019.03.009; arXiv:1808.05322.
-15. Baluja S. Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical report CMU-CS-94-163, School of Computer Science, Carnegie Mellon University, June 1994.
-16. Hauschild M., Pelikan M. An introduction and survey of estimation of distribution algorithms. *Swarm and Evolutionary Computation* 1(3) (2011) 111–128. DOI 10.1016/j.swevo.2011.08.003.
-17. Shapiro J.L. Drift and scaling in estimation of distribution algorithms. *Evolutionary Computation* 13(1) (2005) 99–123. DOI 10.1162/1063656053583414.
-18. Zitzler E., Thiele L. Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach. *IEEE Transactions on Evolutionary Computation* 3(4) (1999) 257–271. DOI 10.1109/4235.797969.
-19. Zitzler E., Thiele L., Laumanns M., Fonseca C.M., da Fonseca V.G. Performance assessment of multiobjective optimizers: an analysis and review. *IEEE Transactions on Evolutionary Computation* 7(2) (2003) 117–132. DOI 10.1109/TEVC.2003.810758.
-20. Efron B. Bootstrap methods: another look at the jackknife. *Annals of Statistics* 7(1) (1979) 1–26. DOI 10.1214/aos/1176344552.
-21. Schuirmann D.J. A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. *Journal of Pharmacokinetics and Biopharmaceutics* 15(6) (1987) 657–680.
-22. Lakens D. Equivalence tests: a practical primer for t tests, correlations, and meta-analyses. *Social Psychological and Personality Science* 8(4) (2017) 355–362. DOI 10.1177/1948550617697177.
-23. Holm S. A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics* 6(2) (1979) 65–70.
-24. López-Ibáñez M., Branke J., Paquete L. Reproducibility in evolutionary computation. *ACM Transactions on Evolutionary Learning and Optimization* 1(4) (2021), article 14. DOI 10.1145/3466624; arXiv:2102.03380.
-25. Nosek B.A., Ebersole C.R., DeHaven A.C., Mellor D.T. The preregistration revolution. *Proceedings of the National Academy of Sciences* 115(11) (2018) 2600–2606. DOI 10.1073/pnas.1708274114.
-26. Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation* 6(2) (2002) 182–197. DOI 10.1109/4235.996017.
-27. Zhang Q., Li H. MOEA/D: a multiobjective evolutionary algorithm based on decomposition. *IEEE Transactions on Evolutionary Computation* 11(6) (2007) 712–731. DOI 10.1109/TEVC.2007.892759.
-28. Solomon M.M. Algorithms for the vehicle routing and scheduling problems with time window constraints. *Operations Research* 35(2) (1987) 254–265. DOI 10.1287/opre.35.2.254.
-29. Mankowska D.S., Meisel F., Bierwirth C. The home health care routing and scheduling problem with interdependent services. *Health Care Management Science* 17(1) (2014) 15–30. DOI 10.1007/s10729-013-9243-1.
-30. Uchoa E., Pecin D., Pessoa A., Poggi M., Vidal T., Subramanian A. New benchmark instances for the capacitated vehicle routing problem. *European Journal of Operational Research* 257(3) (2017) 845–858. DOI 10.1016/j.ejor.2016.08.012.
-31. Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: Christofides N., Mingozzi A., Toth P., Sandi C. (eds) *Combinatorial Optimization*. Wiley, Chichester, 1979, 315–338.
-32. Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: Crainic T.G., Laporte G. (eds) *Fleet Management and Logistics*. Kluwer Academic Publishers, Boston, 1998, 33–56. DOI 10.1007/978-1-4615-5755-5_2.
-33. Li F., Golden B., Wasil E. Very large-scale vehicle routing: new test problems, algorithms, and results. *Computers & Operations Research* 32(5) (2005) 1165–1179. DOI 10.1016/j.cor.2003.10.002.
-34. Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: Miettinen K., Mäkelä M.M., Toivanen J. (eds) *Proceedings of EUROGEN99 – Short Course on Evolutionary Algorithms in Engineering and Computer Science*. Reports of the Department of Mathematical Information Technology, Series A, No. 2/1999, University of Jyväskylä, 1999, 57–64.
-35. Lan L. VRPLIB: a Python package for working with routing problem instances (software and test data, MIT licence), https://github.com/PyVRP/VRPLIB, commit 309f1890 (distributed copy of the benchmark files used in Section 6.6).
-36. Agarwal H., Renaud J.E., Preston E.L., Padmanabhan D. Uncertainty quantification using evidence theory in multidisciplinary design optimization. *Reliability Engineering & System Safety* 85(1–3) (2004) 281–294. DOI 10.1016/j.ress.2004.03.017.
-37. Mourelatos Z.P., Zhou J. A design optimization method using evidence theory. *Journal of Mechanical Design* 128(4) (2006) 901–908. DOI 10.1115/1.2204970.
-38. Zhang Z., Jiang C. Evidence-theory-based structural reliability analysis with epistemic uncertainty: a review. *Structural and Multidisciplinary Optimization* 63(6) (2021) 2935–2953. DOI 10.1007/s00158-021-02863-w.
-39. Yang J.-B., Xu D.-L. On the evidential reasoning algorithm for multiple attribute decision analysis under uncertainty. *IEEE Transactions on Systems, Man, and Cybernetics – Part A* 32(3) (2002) 289–304. DOI 10.1109/TSMCA.2002.802746.
-40. Wang Y.-M., Yang J.-B., Xu D.-L., Chin K.-S. The evidential reasoning approach for multiple attribute decision analysis using interval belief degrees. *European Journal of Operational Research* 175(1) (2006) 35–66.
-41. Larrañaga P., Lozano J.A. *Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation*. Kluwer Academic Publishers, Boston, 2002. ISBN 978-0-7923-7466-4.
+**Online Resource 1.** The extended manuscript (with the full results of Sections 6.3 to 6.5, the post hoc analyses, the full limitations, the declared incidents and the refinement studies), the frozen protocols and code, and the final analysis files are provided as Online Resource 1 and archived in release V1.0 of https://github.com/MontZ26/Evidential_QGA2E_paper_archive (permanent link: https://github.com/MontZ26/Evidential_QGA2E_paper_archive/releases/tag/V1.0).
 
 # Appendix A. Declared incidents and deviations (summary)
 
-No run was repeated to improve a result and no hypothesis, margin or rule was changed after results were read; the incidents are declared in the Supplementary Material (Appendix A).
+No run was repeated to improve a result and no hypothesis, margin or rule was changed after results were read; the incidents are declared in the Online Resource 1 (Appendix A).
 
 # Appendix B. Glossary of abbreviations
 
 **Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: classical multiobjective GAs (non-dominated sorting with crowding; decomposition).
 
 **Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).;
+
+# References
+
+Agarwal H., Renaud J.E., Preston E.L., Padmanabhan D. Uncertainty quantification using evidence theory in multidisciplinary design optimization. *Reliability Engineering & System Safety* 85(1–3) (2004) 281–294. https://doi.org/10.1016/j.ress.2004.03.017.
+
+Baluja S. Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical report CMU-CS-94-163, School of Computer Science, Carnegie Mellon University, June 1994.
+
+Braekers K., Hartl R.F., Parragh S.N., Tricoire F. A bi-objective home care scheduling problem: analyzing the trade-off between costs and client inconvenience. *European Journal of Operational Research* 248(2) (2016) 428–443.
+
+Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: Christofides N., Mingozzi A., Toth P., Sandi C. (eds) *Combinatorial Optimization*. Wiley, Chichester, 1979, 315–338.
+
+Cissé M., Yalçındağ S., Kergosien Y., Şahin E., Lenté C., Matta A. OR problems related to Home Health Care: a review of relevant routing and scheduling problems. *Operations Research for Health Care* 13–14 (2017) 1–22. https://doi.org/10.1016/j.orhc.2017.06.001.
+
+Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation* 6(2) (2002) 182–197. https://doi.org/10.1109/4235.996017.
+
+Dempster A.P. Upper and lower probabilities induced by a multivalued mapping. *Annals of Mathematical Statistics* 38(2) (1967) 325–339. https://doi.org/10.1214/aoms/1177698950.
+
+Denœux T. Decision-making with belief functions: a review. *International Journal of Approximate Reasoning* 109 (2019) 87–110. https://doi.org/10.1016/j.ijar.2019.03.009; arXiv:1808.05322.
+
+Di Mascolo M., Martinez C., Espinouse M.-L. Routing and scheduling in Home Health Care: a literature survey and bibliometric analysis. *Computers & Industrial Engineering* 158 (2021) 107255. https://doi.org/10.1016/j.cie.2021.107255.
+
+Efron B. Bootstrap methods: another look at the jackknife. *Annals of Statistics* 7(1) (1979) 1–26. https://doi.org/10.1214/aos/1176344552.
+
+Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. https://doi.org/10.1016/j.cor.2016.07.019.
+
+Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: Miettinen K., Mäkelä M.M., Toivanen J. (eds) *Proceedings of EUROGEN99 – Short Course on Evolutionary Algorithms in Engineering and Computer Science*. Reports of the Department of Mathematical Information Technology, Series A, No. 2/1999, University of Jyväskylä, 1999, 57–64.
+
+Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: Crainic T.G., Laporte G. (eds) *Fleet Management and Logistics*. Kluwer Academic Publishers, Boston, 1998, 33–56. https://doi.org/10.1007/978-1-4615-5755-5_2.
+
+Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithm for a class of combinatorial optimization. *IEEE Transactions on Evolutionary Computation* 6(6) (2002) 580–593. https://doi.org/10.1109/TEVC.2002.804320.
+
+Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithms with a new termination criterion, Hε gate, and two-phase scheme. *IEEE Transactions on Evolutionary Computation* 8(2) (2004) 156–169. https://doi.org/10.1109/TEVC.2004.823467.
+
+Hauschild M., Pelikan M. An introduction and survey of estimation of distribution algorithms. *Swarm and Evolutionary Computation* 1(3) (2011) 111–128. https://doi.org/10.1016/j.swevo.2011.08.003.
+
+Holm S. A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics* 6(2) (1979) 65–70.
+
+Kim Y., Kim J.-H., Han K.-H. Quantum-inspired multiobjective evolutionary algorithm for multiobjective 0/1 knapsack problems. *Proc. 2006 IEEE Congress on Evolutionary Computation* (2006) 2601–2606. https://doi.org/10.1109/CEC.2006.1688633.
+
+Lakens D. Equivalence tests: a practical primer for t tests, correlations, and meta-analyses. *Social Psychological and Personality Science* 8(4) (2017) 355–362. https://doi.org/10.1177/1948550617697177.
+
+Lan L. VRPLIB: a Python package for working with routing problem instances (software and test data, MIT licence), https://github.com/PyVRP/VRPLIB, commit 309f1890 (distributed copy of the benchmark files used in Section 6.6).
+
+Larrañaga P., Lozano J.A. *Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation*. Kluwer Academic Publishers, Boston, 2002. ISBN 978-0-7923-7466-4.
+
+Li F., Golden B., Wasil E. Very large-scale vehicle routing: new test problems, algorithms, and results. *Computers & Operations Research* 32(5) (2005) 1165–1179. https://doi.org/10.1016/j.cor.2003.10.002.
+
+Li Z., Rudolph G. A framework of quantum-inspired multi-objective evolutionary algorithms and its convergence properties. Technical report, TU Dortmund (SFB 531), 2007. https://doi.org/10.17877/DE290R-8713.
+
+López-Ibáñez M., Branke J., Paquete L. Reproducibility in evolutionary computation. *ACM Transactions on Evolutionary Learning and Optimization* 1(4) (2021), article 14. https://doi.org/10.1145/3466624; arXiv:2102.03380.
+
+Mankowska D.S., Meisel F., Bierwirth C. The home health care routing and scheduling problem with interdependent services. *Health Care Management Science* 17(1) (2014) 15–30. https://doi.org/10.1007/s10729-013-9243-1.
+
+Mourelatos Z.P., Zhou J. A design optimization method using evidence theory. *Journal of Mechanical Design* 128(4) (2006) 901–908. https://doi.org/10.1115/1.2204970.
+
+Nosek B.A., Ebersole C.R., DeHaven A.C., Mellor D.T. The preregistration revolution. *Proceedings of the National Academy of Sciences* 115(11) (2018) 2600–2606. https://doi.org/10.1073/pnas.1708274114.
+
+Rasmussen M.S., Justesen T., Dohn A., Larsen J. The home care crew scheduling problem: preference-based visit clustering and temporal dependencies. *European Journal of Operational Research* 219(3) (2012) 598–610.
+
+Schuirmann D.J. A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. *Journal of Pharmacokinetics and Biopharmaceutics* 15(6) (1987) 657–680.
+
+Shafer G. *A Mathematical Theory of Evidence*. Princeton University Press, 1976.
+
+Shapiro J.L. Drift and scaling in estimation of distribution algorithms. *Evolutionary Computation* 13(1) (2005) 99–123. https://doi.org/10.1162/1063656053583414.
+
+Smets P., Kennes R. The transferable belief model. *Artificial Intelligence* 66(2) (1994) 191–234. https://doi.org/10.1016/0004-3702(94)90026-4.
+
+Solomon M.M. Algorithms for the vehicle routing and scheduling problems with time window constraints. *Operations Research* 35(2) (1987) 254–265. https://doi.org/10.1287/opre.35.2.254.
+
+Uchoa E., Pecin D., Pessoa A., Poggi M., Vidal T., Subramanian A. New benchmark instances for the capacitated vehicle routing problem. *European Journal of Operational Research* 257(3) (2017) 845–858. https://doi.org/10.1016/j.ejor.2016.08.012.
+
+Wang Y.-M., Yang J.-B., Xu D.-L., Chin K.-S. The evidential reasoning approach for multiple attribute decision analysis using interval belief degrees. *European Journal of Operational Research* 175(1) (2006) 35–66.
+
+Yager R.R. On the Dempster–Shafer framework and new combination rules. *Information Sciences* 41(2) (1987) 93–137. https://doi.org/10.1016/0020-0255(87)90007-7.
+
+Yang J.-B., Xu D.-L. On the evidential reasoning algorithm for multiple attribute decision analysis under uncertainty. *IEEE Transactions on Systems, Man, and Cybernetics – Part A* 32(3) (2002) 289–304. https://doi.org/10.1109/TSMCA.2002.802746.
+
+Zhang Z., Jiang C. Evidence-theory-based structural reliability analysis with epistemic uncertainty: a review. *Structural and Multidisciplinary Optimization* 63(6) (2021) 2935–2953. https://doi.org/10.1007/s00158-021-02863-w.
+
+Zhang Q., Li H. MOEA/D: a multiobjective evolutionary algorithm based on decomposition. *IEEE Transactions on Evolutionary Computation* 11(6) (2007) 712–731. https://doi.org/10.1109/TEVC.2007.892759.
+
+Zitzler E., Thiele L. Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach. *IEEE Transactions on Evolutionary Computation* 3(4) (1999) 257–271. https://doi.org/10.1109/4235.797969.
+
+Zitzler E., Thiele L., Laumanns M., Fonseca C.M., da Fonseca V.G. Performance assessment of multiobjective optimizers: an analysis and review. *IEEE Transactions on Evolutionary Computation* 7(2) (2003) 117–132. https://doi.org/10.1109/TEVC.2003.810758.
+
+# Statements and Declarations
+
+**Funding.** The author received no funding for this work.
+
+**Competing interests.** The author has no competing interests to declare.
+
+**Author contributions.** Single author: Montassar Zaghdoud (conceptualisation, methodology, experiments, analysis, writing, review and editing).
+
+**Data availability.** The frozen protocols, the code, the parameter and freeze records, the final reports and the final analysis files of all studies reported here, together with both versions of this manuscript, are archived in release V1.0 of the repository https://github.com/MontZ26/Evidential_QGA2E_paper_archive (permanent link: https://github.com/MontZ26/Evidential_QGA2E_paper_archive/releases/tag/V1.0). The raw per-run result files are not included because of their size; they can be regenerated with the code and the seeds stated in each protocol. A public repository for the earlier manuscript contains the generator of that paper, the RC101 file and the raw results of its 20-seed experiments.
+
+**Ethics.** Not applicable: no human participants or animals were involved, and all patient information is simulated.
+
+**Use of AI tools.** The author used Claude (Anthropic) to assist with drafting and editing the manuscript text, preparing tables and figures from the analysis files, and checking cross-references and citations. The experimental design, the experiments, the interpretation of the results and the final content were produced and verified by the author, who takes full responsibility for the manuscript.
 
