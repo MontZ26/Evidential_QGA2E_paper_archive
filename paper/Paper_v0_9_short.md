@@ -233,7 +233,7 @@ Two later studies (n = 100, seeds 12000–12099, not independent) varied the dep
 
 ## 6.6 Independent evaluations on new families of instances
 
-All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 (Uchoa et al. 2017), Christofides M-n101-k10 (Christofides et al. 1979), Golden_1 (1998), Li_21 (2005), ORTEC-n242-k12 and Homberger C1_2_1 (Gehring and Homberger 1999)) from the test data of VRPLIB (Lan 2023), with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
+All earlier decisions were made on scenarios derived from three Solomon geographies. Two studies, each with a protocol written before any calibration or run, ask which main contrasts hold on instances that played no role in those decisions (new geographies, sizes and seeds; the free exponent was recalibrated each time; only the geography changes, so the instances are semi-synthetic). The first used synthetic Solomon-like geographies (uniform, clustered, mixed; 40 patients and 9 teams, or 70 and 12; 60 seeds per scenario, 360 instances); the second used customer coordinates of six public benchmark files (Uchoa X-n101-k25 (Uchoa et al. 2017), M-n101-k10, Golden_1 (1998), Li_21 (2005), ORTEC-n242-k12 and C1_2_1) from the test data of VRPLIB (Lan 2023), with 50 patients sampled per seed, 10 teams, day end 240 and visit 10 (60 seeds, 360 instances). Skills, windows, hidden truth and evidence are simulated by the unchanged generator. The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.
 
 **Table 2.** Independent evaluation (60 seeds, six new scenarios; paired differences in oracle hypervolume, 99% intervals, margin 0.005).
 
@@ -331,8 +331,6 @@ Baluja S. Population-based incremental learning: a method for integrating geneti
 
 Braekers K., Hartl R.F., Parragh S.N., Tricoire F. A bi-objective home care scheduling problem: analyzing the trade-off between costs and client inconvenience. *European Journal of Operational Research* 248(2) (2016) 428–443.
 
-Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: *Combinatorial Optimization*. Wiley, Chichester, 1979.
-
 Cissé M., Yalçındağ S., Kergosien Y., Şahin E., Lenté C., Matta A. OR problems related to Home Health Care: a review of relevant routing and scheduling problems. *Operations Research for Health Care* 13–14 (2017) 1–22. https://doi.org/10.1016/j.orhc.2017.06.001.
 
 Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation* 6(2) (2002) 182–197. https://doi.org/10.1109/4235.996017.
@@ -346,8 +344,6 @@ Di Mascolo M., Martinez C., Espinouse M.-L. Routing and scheduling in Home Healt
 Efron B. Bootstrap methods: another look at the jackknife. *Annals of Statistics* 7(1) (1979) 1–26. https://doi.org/10.1214/aos/1176344552.
 
 Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. https://doi.org/10.1016/j.cor.2016.07.019.
-
-Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: *Proceedings of EUROGEN99*, 1999.
 
 Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: *Fleet Management and Logistics*. Springer, Boston, MA, 1998. https://doi.org/10.1007/978-1-4615-5755-5_2.
 

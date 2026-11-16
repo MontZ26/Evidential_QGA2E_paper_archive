@@ -337,7 +337,7 @@ At every w the evidential target exceeded the simple probabilistic target (E −
 
 **First evaluation: reading.** On this family the sharpened probabilistic target was at least as good as the evidential ones, the large gap to the simple probabilistic target was stable, and the small advantage of DA over E at the high source strength was not reproduced. One algorithm, one family of generators and synthetic evidence were used.
 
-**Second evaluation: benchmark geographies.** To answer the objection that the geographies of the first evaluation were synthetic, a second evaluation used customer coordinates from six public benchmark files never used before: Uchoa et al. X-n101-k25 (2017), Christofides et al. M-n101-k10 (1979), Golden et al. Golden_1 (1998), Li et al. Li_21 (2005), ORTEC-n242-k12 (described in its file as derived from a real grocery-delivery service) and Homberger C1_2_1 (Gehring and Homberger 1999); the files are those of the test data of an open-source package (Lan 2023) (Appendix B, Table B2). The other instances of the Solomon family (R1xx, R2xx, C1xx, C2xx, RC1xx, RC2xx) share their coordinates with RC101, R101 and C101 and were therefore not used. For each seed, 50 patients were drawn without replacement from the customers of the file and the coordinates were rescaled uniformly into a 100 × 100 box; the depot is that of the file; there are 10 teams, the day ends at 240 and a visit lasts 10. Skills, certifications, time windows, hidden truth and evidence sources come from the unchanged generator and are simulated. Sixty seeds per geography (360 instances), the same arms, budget, oracle hypervolume and decision rules as in the first evaluation. The calibration (other seeds; geographies X, Golden and ORTEC) selected γ = 4 at both source strengths; the concentration gate was satisfied at w = 0.7 and not at w = 0.3 (best attempt, declared). On the evaluation instances the match of mean concentration was conforming at w = 0.7 (relative entropy gap 3.0%, difference of maximum probability 0.009) and not conforming at w = 0.3 (12.5% and 0.072 for γ = 4; 23% and 0.133 for the fixed exponent γ = 6).
+**Second evaluation: benchmark geographies.** To answer the objection that the geographies of the first evaluation were synthetic, a second evaluation used customer coordinates from six public benchmark files never used before: Uchoa et al. X-n101-k25 (2017), M-n101-k10, Golden et al. Golden_1 (1998), Li et al. Li_21 (2005), ORTEC-n242-k12 (described in its file as derived from a real grocery-delivery service) and C1_2_1; the files are those of the test data of an open-source package (Lan 2023) (Appendix B, Table B2). The other instances of the Solomon family (R1xx, R2xx, C1xx, C2xx, RC1xx, RC2xx) share their coordinates with RC101, R101 and C101 and were therefore not used. For each seed, 50 patients were drawn without replacement from the customers of the file and the coordinates were rescaled uniformly into a 100 × 100 box; the depot is that of the file; there are 10 teams, the day ends at 240 and a visit lasts 10. Skills, certifications, time windows, hidden truth and evidence sources come from the unchanged generator and are simulated. Sixty seeds per geography (360 instances), the same arms, budget, oracle hypervolume and decision rules as in the first evaluation. The calibration (other seeds; geographies X, Golden and ORTEC) selected γ = 4 at both source strengths; the concentration gate was satisfied at w = 0.7 and not at w = 0.3 (best attempt, declared). On the evaluation instances the match of mean concentration was conforming at w = 0.7 (relative entropy gap 3.0%, difference of maximum probability 0.009) and not conforming at w = 0.3 (12.5% and 0.072 for γ = 4; 23% and 0.133 for the fixed exponent γ = 6).
 
 **Table 7.** Second independent evaluation (benchmark geographies; 60 seeds, six geographies; paired differences in oracle hypervolume, 99% intervals, margin 0.005; the last column gives the first evaluation).
 
@@ -503,11 +503,11 @@ Perspectives: a design that manipulates concentration while holding the represen
 | Code | File | Nodes in file (depot + customers) | Origin |
 |---|---|---|---|
 | B-X | X-n101-k25 | 101 | Uchoa et al. (2017) |
-| B-M | M-n101-k10 | 101 | Christofides et al. (1979) |
+| B-M | M-n101-k10 | 101 | public benchmark file, distributed with (Lan 2023) |
 | B-G | Golden_1 | 241 | Golden et al. (1998) |
 | B-L | Li_21 | 561 | Li et al. (2005) |
 | B-O | ORTEC-n242-k12 | 242 | ORTEC (file: derived from a real US grocery delivery service) |
-| B-H | C1_2_1 | 201 | Homberger and Gehring (1999) |
+| B-H | C1_2_1 | 201 | public benchmark file, distributed with (Lan 2023) |
 
 For each seed, 50 patients are drawn without replacement among the customers of the file and the coordinates are rescaled uniformly so that the larger side of the bounding box is 100 (10 teams; day end 240; visit 10). Public home-care benchmark sets exist (Mankowska et al. 2014) but contain no observed affinities or evidence sources; no real home-care data were available for this study.
 
@@ -564,8 +564,6 @@ Baluja S. Population-based incremental learning: a method for integrating geneti
 
 Braekers K., Hartl R.F., Parragh S.N., Tricoire F. A bi-objective home care scheduling problem: analyzing the trade-off between costs and client inconvenience. *European Journal of Operational Research* 248(2) (2016) 428–443.
 
-Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: *Combinatorial Optimization*. Wiley, Chichester, 1979.
-
 Cissé M., Yalçındağ S., Kergosien Y., Şahin E., Lenté C., Matta A. OR problems related to Home Health Care: a review of relevant routing and scheduling problems. *Operations Research for Health Care* 13–14 (2017) 1–22. https://doi.org/10.1016/j.orhc.2017.06.001.
 
 Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation* 6(2) (2002) 182–197. https://doi.org/10.1109/4235.996017.
@@ -579,8 +577,6 @@ Di Mascolo M., Martinez C., Espinouse M.-L. Routing and scheduling in Home Healt
 Efron B. Bootstrap methods: another look at the jackknife. *Annals of Statistics* 7(1) (1979) 1–26. https://doi.org/10.1214/aos/1176344552.
 
 Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. https://doi.org/10.1016/j.cor.2016.07.019.
-
-Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: *Proceedings of EUROGEN99*, 1999.
 
 Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: *Fleet Management and Logistics*. Springer, Boston, MA, 1998. https://doi.org/10.1007/978-1-4615-5755-5_2.
 
