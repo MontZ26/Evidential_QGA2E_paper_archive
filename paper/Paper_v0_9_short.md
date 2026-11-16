@@ -329,7 +329,7 @@ Baluja S. Population-based incremental learning: a method for integrating geneti
 
 Braekers K., Hartl R.F., Parragh S.N., Tricoire F. A bi-objective home care scheduling problem: analyzing the trade-off between costs and client inconvenience. *European Journal of Operational Research* 248(2) (2016) 428–443.
 
-Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: Christofides N., Mingozzi A., Toth P., Sandi C. (eds) *Combinatorial Optimization*. Wiley, Chichester, 1979, 315–338.
+Christofides N., Mingozzi A., Toth P. The vehicle routing problem. In: *Combinatorial Optimization*. Wiley, Chichester, 1979.
 
 Cissé M., Yalçındağ S., Kergosien Y., Şahin E., Lenté C., Matta A. OR problems related to Home Health Care: a review of relevant routing and scheduling problems. *Operations Research for Health Care* 13–14 (2017) 1–22. https://doi.org/10.1016/j.orhc.2017.06.001.
 
@@ -345,9 +345,9 @@ Efron B. Bootstrap methods: another look at the jackknife. *Annals of Statistics
 
 Fikar C., Hirsch P. Home health care routing and scheduling: a review. *Computers & Operations Research* 77 (2017) 86–95. https://doi.org/10.1016/j.cor.2016.07.019.
 
-Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: Miettinen K., Mäkelä M.M., Toivanen J. (eds) *Proceedings of EUROGEN99 – Short Course on Evolutionary Algorithms in Engineering and Computer Science*. Reports of the Department of Mathematical Information Technology, Series A, No. 2/1999, University of Jyväskylä, 1999, 57–64.
+Gehring H., Homberger J. A parallel hybrid evolutionary metaheuristic for the vehicle routing problem with time windows. In: *Proceedings of EUROGEN99*, 1999.
 
-Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: Crainic T.G., Laporte G. (eds) *Fleet Management and Logistics*. Springer, Boston, MA, 1998, 33–56. https://doi.org/10.1007/978-1-4615-5755-5_2.
+Golden B.L., Wasil E.A., Kelly J.P., Chao I.-M. The impact of metaheuristics on solving the vehicle routing problem: algorithms, problem sets, and computational results. In: *Fleet Management and Logistics*. Springer, Boston, MA, 1998. https://doi.org/10.1007/978-1-4615-5755-5_2.
 
 Han K.-H., Kim J.-H. Quantum-inspired evolutionary algorithm for a class of combinatorial optimization. *IEEE Transactions on Evolutionary Computation* 6(6) (2002) 580–593. https://doi.org/10.1109/TEVC.2002.804320.
 
