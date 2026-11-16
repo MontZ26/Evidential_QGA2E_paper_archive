@@ -177,7 +177,7 @@ With $\varepsilon=0.02$ and $K=4$ the plateau is $0.94$ (Figure 3a). The exponen
 
 ## 4.4 Classical baselines
 
-NSGA-II [26] (elitist, binary tournament on rank and crowding, uniform crossover with probability 0.9, per-gene mutation with probability $1/n_p$ to another allowed team) and MOEA/D [27] (Tchebycheff decomposition, neighbourhood 20) are run on the same instances, seeds, decoder and budget. Every evaluated solution is recorded in an archive; the output is the non-dominated set of the archive, re-evaluated in the oracle world exactly as for QGA2-E.
+NSGA-II [26] (elitist, binary tournament on rank and crowding, uniform crossover with probability 0.9, per-gene mutation with probability $1/n_p$ to another allowed team) and MOEA/D [27] (Tchebycheff decomposition, neighbourhood 20) are run on the same instances, seeds, decoder and budget. Every evaluated solution is recorded in an archive; the output is the non-dominated set of the archive, re-evaluated in the oracle world exactly as for QGA2-E. Each algorithm received the same small tuning effort, three candidate parameter sets evaluated on separate tuning seeds under a selection rule written before the runs (the rotation step of QGA2-E, the crossover and mutation probabilities of NSGA-II, the neighbourhood size of MOEA/D; the a priori set was kept unless another improved the criterion by at least 0.001). The comparison with the classical algorithms is therefore contextual: it is made at equal budget, on one problem family and with a limited tuning effort, and it is not a ranking of algorithm families or evidence about other model-based algorithms.
 
 ## 4.5 Other variants
 
@@ -197,7 +197,7 @@ Two reporting regimes were used. The earlier studies were analysed with 95% boot
 - *equivalence* if $[L,U]\subset[-\delta,\delta]$;
 - *inconclusive* otherwise.
 
-An interval that contains 0 does not demonstrate equivalence, and an inferiority whose interval extends beyond $-\delta$ is not an equivalence either. Secondary contrasts are reported with 95% intervals and are exploratory. The sequence of studies was not corrected for multiplicity globally (Section 8).
+An interval that contains 0 does not demonstrate equivalence, and an inferiority whose interval extends beyond $-\delta$ is not an equivalence either. Likewise, a superiority or inferiority decision means that the interval excludes zero: it does not show that the difference exceeds the margin $\delta$ over the whole interval, and a difference smaller than $\delta$ may be detectable without being of practical relevance. Secondary contrasts are reported with 95% intervals and are exploratory. The sequence of studies was not corrected for multiplicity globally (Section 8).
 
 ## 5.2 Governance
 

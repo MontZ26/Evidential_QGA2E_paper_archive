@@ -154,7 +154,7 @@ With $\varepsilon=0.02$ and $K=4$ the plateau is $0.94$ (Figure 3a). The exponen
 
 ## 4.4 Baselines and other variants
 
-NSGA-II [26] and MOEA/D [27] are run on the same instances, seeds, decoder and budget, with an archive of every evaluated solution re-evaluated in the oracle world as for QGA2-E. Guided mutation in NSGA-II draws the new team of a mutated gene (probability $1/n_p$) from the target $q$ restricted to the other allowed teams; with $q$ uniform it is bit-for-bit NSGA-II.
+NSGA-II [26] and MOEA/D [27] are run on the same instances, seeds, decoder and budget, with an archive of every evaluated solution re-evaluated in the oracle world as for QGA2-E. Guided mutation in NSGA-II draws the new team of a mutated gene (probability $1/n_p$) from the target $q$ restricted to the other allowed teams; with $q$ uniform it is bit-for-bit NSGA-II. Each algorithm received the same small tuning effort, three candidate parameter sets evaluated on separate tuning seeds under a selection rule written before the runs (the rotation step of QGA2-E, the crossover and mutation probabilities of NSGA-II, the neighbourhood size of MOEA/D; the a priori set was kept unless another improved the criterion by at least 0.001). The comparison with the classical algorithms is therefore contextual: it is made at equal budget, on one problem family and with a limited tuning effort, and it is not a ranking of algorithm families or evidence about other model-based algorithms.
 
 # 5. Experimental design and decision rules
 
@@ -168,7 +168,7 @@ Two reporting regimes were used. The earlier studies were analysed with 95% boot
 - *equivalence* if $[L,U]\subset[-\delta,\delta]$;
 - *inconclusive* otherwise.
 
-An interval that contains 0 does not demonstrate equivalence, and an inferiority whose interval extends beyond $-\delta$ is not an equivalence either. Secondary contrasts are reported with 95% intervals and are exploratory. The sequence of studies was not corrected for multiplicity globally (Section 8).
+An interval that contains 0 does not demonstrate equivalence, and an inferiority whose interval extends beyond $-\delta$ is not an equivalence either. Likewise, a superiority or inferiority decision means that the interval excludes zero: it does not show that the difference exceeds the margin $\delta$ over the whole interval, and a difference smaller than $\delta$ may be detectable without being of practical relevance. Secondary contrasts are reported with 95% intervals and are exploratory. The sequence of studies was not corrected for multiplicity globally (Section 8).
 
 ## 5.2 Governance
 
@@ -365,5 +365,5 @@ No run was repeated to improve a result and no hypothesis, margin or rule was ch
 
 **Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: classical multiobjective GAs (non-dominated sorting with crowding; decomposition).
 
-**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).;
+**Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).
 
