@@ -111,7 +111,7 @@ No run was repeated to improve a result and no hypothesis, margin or rule was ch
 '''
 gl="""# Appendix B. Glossary of abbreviations
 
-**Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: classical multiobjective GAs (non-dominated sorting with crowding; decomposition).
+**Algorithms.** QGA2-E: the quantum-inspired GA of this paper (one angle θ per gene, selection probability sin²θ, target computed from the first non-dominated front). NSGA-II, MOEA/D: the Non-dominated Sorting Genetic Algorithm II and the Multiobjective Evolutionary Algorithm based on Decomposition, classical multiobjective algorithms (non-dominated sorting with crowding; decomposition).
 
 **Targets.** q: target probability per team. Dp: simple probabilistic target. E: evidential target (Dempster's rule, then BetP). DA(λ): E with source discounting by similarity (λ = 1 is DA, σ = 0.7). Dg(γ), Eg(γ): Dp, E sharpened by the power γ (γ = 6 unless stated).
 
@@ -127,7 +127,7 @@ R('(Section 8). The implementation guards','(Section 8). The implementation guar
 R('Appendix B). Only the customer','Appendix B). Only the customer')
 R('early comparisons of Section 6.3','early comparisons of Section 6.2')
 R('Sections 6.4 to 6.6 all use','Sections 6.3 to 6.7 all use')
-for a,c in [('## 2.2 ','## 2.1 '),('## 2.3 ','## 2.2 '),('## 2.4 ','## 2.3 '),('## 2.6 ','## 2.4 '),('(Section 2.4)','(Section 2.3)'),('(Section 2.2)','(Section 2.1)')]:
+for a,c in [('## 2.2 ','## 2.1 '),('## 2.3 ','## 2.2 '),('## 2.4 ','## 2.3 '),('## 2.6 ','## 2.4 '),('(PBIL, Section 2.4)','(PBIL, Section 2.3)'),('(Section 2.2)','(Section 2.1)')]:
     assert a in out,a; out=out.replace(a,c)
 out=out.replace('**Table 6.**','**Table 2.**').replace('**Table 7.**','**Table 3.**').replace('**Table 8.**','**Table 4.**').replace('(Table 1) and the detail','(Table 1) and the detail')
 
@@ -148,7 +148,7 @@ def Q(a,c):
     assert out.count(a)==1,(out.count(a),a); out=out.replace(a,c)
 import re as _re
 m=_re.search(r"The pairwise matrix of all methods \(Table 1\) and the detail of Sections 6\.3 to 6\.5 are in the (?:Supplementary Material|extended version)\.",out); assert m
-out=out.replace(m.group(0),"Table 1 gathers the pairwise differences in oracle hypervolume between the 14 methods on the six Solomon-derived scenarios (SC6): bold values are primary pre-registered paired contrasts (99% CI), round brackets secondary paired contrasts (95% CI), and square or curly brackets differences of means (within or across seed ranges) without intervals. The values quoted in Sections 6.1, 6.3 and 6.8 are taken from it or from the paired contrasts it lists; studies on other seed ranges (Sections 6.5 to 6.7) are reported in their own tables and are not in it. The detail of Sections 6.3 to 6.5 is in the Supplementary Material.")
+out=out.replace(m.group(0),"Table 1 gathers the pairwise differences in oracle hypervolume between the 14 methods on the six Solomon-derived scenarios (SC6): bold values are primary pre-registered paired contrasts (99% confidence interval, CI), round brackets secondary paired contrasts (95% CI), and square or curly brackets differences of means (within or across seed ranges) without intervals. The values quoted in Sections 6.1, 6.3 and 6.8 are taken from it or from the paired contrasts it lists; studies on other seed ranges (Sections 6.5 to 6.7) are reported in their own tables and are not in it. The detail of Sections 6.3 to 6.5 is in the Supplementary Material.")
 Q("(100 seeds, 99% CI; MOEA/D slightly better","(Table 1; 100 seeds, 99% CI; MOEA/D slightly better")
 Q("in the confirmatory comparison (n = 100) DA − Dp","in the confirmatory comparison (n = 100; Table 1 gives the confirmatory values) DA − Dp")
 Q("The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations.","The concentration gate was satisfied at w = 0.7 only; at w = 0.3 the match failed in both evaluations. Results are in Tables 2 and 3.")
